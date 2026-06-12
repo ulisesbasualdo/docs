@@ -1,0 +1,26 @@
+tecnologia: css
+titulo: CSS de cero a experto
+descripcion: >-
+  Aprende a darle estilo a paginas web reales: del primer selector a layouts
+  con grid, animaciones y arquitectura CSS mantenible. Explicado linea por
+  linea, sin saltear nada.
+modulos:
+  - slug: css-basico
+    titulo: CSS basico
+    quiz: css-basico
+  - slug: selectores
+    titulo: Selectores y cascada
+  - slug: cajas
+    titulo: El modelo de caja
+  - slug: layout-flexbox
+    titulo: Layout con Flexbox
+  - slug: layout-grid
+    titulo: Layout con Grid
+  - slug: responsive
+    titulo: Disenio responsive
+  - slug: tipografia-color
+    titulo: Tipografia y color
+  - slug: transiciones
+    titulo: Transiciones y animaciones
+  - slug: arquitectura
+    titulo: Arquitectura CSS mantenible

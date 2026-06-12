@@ -1,59 +1,46 @@
-# Docs
+# Docs — Aprende a programar, linea por linea
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.0.1.
+Cursos interactivos y **gratuitos** de HTML, CSS y JavaScript, explicados linea por linea con analogias de la vida real y examenes por modulo. Sin cuentas, sin pagos, sin tracking: solo contenido.
 
-## Development server
+**Sitio:** https://ulisesbasualdo.github.io/docs/
 
-To start a local development server, run:
+## Como funciona
 
-```bash
-ng serve
-```
+- Cada **leccion** es un archivo Markdown en `content/<tecnologia>/` con un frontmatter validado por [Zod](src/app/contenido/esquema.ts): el codigo del ejemplo (uno o varios archivos) y una explicacion **tecnica + analogia** por cada linea.
+- Cada **track** declara sus modulos ordenados en `content/<tecnologia>/_track.yaml`, con un examen opcional por modulo.
+- Los **examenes** son YAML en `content/examenes/` y se corrigen en el navegador; el resultado no se guarda en ningun lado.
+- `tools/content-build.ts` valida todo, resalta el codigo con Shiki en build, convierte el Markdown y emite JSON estatico a `public/contenido/`.
+- El sitio es Angular 22 (zoneless, signals) **prerenderizado**: cada leccion existe como HTML real, indexable, sin backend.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Desarrollo
 
 ```bash
-ng generate component component-name
+npm ci
+npm start             # pipeline de contenido + servidor de desarrollo
+npm run test:coverage # tests con umbral de cobertura al 100%
+npm run build:pages   # build de produccion con base href /docs/
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Requiere Node 24.
 
-```bash
-ng generate --help
-```
+## Agregar una leccion nueva
 
-## Building
+1. Crear `content/<tecnologia>/<slug>.md` siguiendo el formato de cualquier leccion existente.
+2. Si el modulo es nuevo, declararlo en `content/<tecnologia>/_track.yaml` (el orden de la lista define el orden del curso).
+3. `npm run content:build` valida el frontmatter y falla con un mensaje claro si algo esta mal.
+4. El prerender y la navegacion anterior/siguiente se recalculan solos.
 
-To build the project run:
+Para un track nuevo: crear la carpeta con su `_track.yaml`, sumar la tecnologia al enum `TECNOLOGIAS` del [esquema](src/app/contenido/esquema.ts) y listo: la portada lo muestra automaticamente.
 
-```bash
-ng build
-```
+## Calidad
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+- Cobertura de tests **al 100%** (statements, branches, functions y lines), verificada en CI: el deploy no sale si baja.
+- Deploy automatico a GitHub Pages en cada push a `main` via [GitHub Actions](.github/workflows/deploy.yml).
 
-## Running unit tests
+## Contacto
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+Hecho por **Ulises Basualdo** — [ulisesbasualdo.com](https://ulisesbasualdo.com) · [LinkedIn](https://www.linkedin.com/in/ulisesbasualdo/) · [YouTube](https://www.youtube.com/@ulibasualdo) · [TikTok](https://www.tiktok.com/@ulibasualdo) · [Facebook](https://www.facebook.com/ulibasualdo7) · ulimiramar@gmail.com
 
-```bash
-ng test
-```
+## Licencia
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+[MIT](LICENSE)

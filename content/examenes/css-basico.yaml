@@ -1,0 +1,51 @@
+slug: css-basico
+titulo: Examen del modulo CSS basico
+track: css
+modulo: css-basico
+aprobacion: 70
+preguntas:
+  - id: q1
+    texto: "En la regla h1 { color: darkblue; }, que parte es el selector?"
+    opciones:
+      - "color"
+      - "darkblue"
+      - "h1"
+      - "{ }"
+    correcta: 2
+    explicacion: "El selector dice a que elementos se aplica la regla; aca, a todos los h1 de la pagina. color es la propiedad y darkblue el valor."
+  - id: q2
+    texto: "Que separa la propiedad del valor en una declaracion CSS?"
+    opciones:
+      - "Un punto y coma"
+      - "Dos puntos"
+      - "Un igual"
+      - "Una coma"
+    correcta: 1
+    explicacion: "La forma es propiedad: valor; — dos puntos en el medio y punto y coma al final de cada declaracion."
+  - id: q3
+    texto: "Como se conecta una hoja de estilos externa al HTML?"
+    opciones:
+      - "<style src=\"estilos.css\">"
+      - "<link rel=\"stylesheet\" href=\"estilos.css\" /> dentro del head"
+      - "<css href=\"estilos.css\"> dentro del body"
+      - "Escribiendo el CSS dentro del title"
+    correcta: 1
+    explicacion: "La etiqueta link va en el head, con rel=\"stylesheet\" (la relacion) y href (la ruta del archivo)."
+  - id: q4
+    texto: "Por que conviene usar rem en vez de pixeles fijos para el tamanio de letra?"
+    opciones:
+      - "Porque rem carga mas rapido"
+      - "Porque respeta el tamanio de letra que el usuario configuro en su navegador"
+      - "Porque los pixeles no funcionan en celulares"
+      - "Porque rem es mas nuevo"
+    correcta: 1
+    explicacion: "rem es relativo al tamanio base del sitio, asi que si el usuario agranda la letra en su navegador, todo escala en proporcion. Es una buena practica de accesibilidad."
+  - id: q5
+    texto: "Que hace font-family: system-ui, sans-serif; con la lista separada por comas?"
+    opciones:
+      - "Aplica las dos tipografias mezcladas"
+      - "Usa la primera disponible; las siguientes son respaldo"
+      - "Alterna una tipografia por parrafo"
+      - "Es un error de sintaxis"
+    correcta: 1
+    explicacion: "Es una lista de respaldo: el navegador intenta con system-ui y, si no existe en el sistema, cae a cualquier sans-serif."

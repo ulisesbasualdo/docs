@@ -1,0 +1,60 @@
+slug: html-fundamentos
+titulo: Examen del modulo Fundamentos de HTML
+track: html
+modulo: fundamentos
+aprobacion: 70
+preguntas:
+  - id: q1
+    texto: "En la linea <h1>Tienda La Esquina</h1>, que parte es la etiqueta de cierre?"
+    opciones:
+      - "<h1>"
+      - "Tienda La Esquina"
+      - "</h1>"
+      - "h1"
+    correcta: 2
+    explicacion: "La etiqueta de cierre es igual a la de apertura pero con la barra: </h1>. Marca donde termina el contenido del titulo."
+  - id: q2
+    texto: "Que seccion de la pagina contiene lo que el visitante VE en pantalla?"
+    opciones:
+      - "<head>"
+      - "<body>"
+      - "<title>"
+      - "<!doctype html>"
+    correcta: 1
+    explicacion: "El body es el cuerpo visible de la pagina. El head guarda informacion sobre el documento, como el titulo de la pestania."
+  - id: q3
+    texto: "Para que sirve el atributo alt en una imagen?"
+    opciones:
+      - "Define el tamanio de la imagen"
+      - "Indica la carpeta donde esta la imagen"
+      - "Describe la imagen para quien no puede verla"
+      - "Hace que la imagen cargue mas rapido"
+    correcta: 2
+    explicacion: "El alt es el texto alternativo: lo leen los lectores de pantalla y se muestra si la imagen no carga. Es una regla clave de accesibilidad."
+  - id: q4
+    texto: "Si abriste <article> y adentro <h2>, cual es el orden correcto de cierre?"
+    opciones:
+      - "</article> y despues </h2>"
+      - "</h2> y despues </article>"
+      - "Da igual el orden"
+      - "El article no se cierra"
+    correcta: 1
+    explicacion: "Las etiquetas se cierran de adentro hacia afuera, sin cruzarse: primero el hijo (h2), despues el padre (article)."
+  - id: q5
+    texto: "Que hace la primera linea <!doctype html>?"
+    opciones:
+      - "Crea el titulo de la pestania"
+      - "Le dice al navegador que use las reglas del HTML actual"
+      - "Importa los estilos del sitio"
+      - "Define el idioma de la pagina"
+    correcta: 1
+    explicacion: "El doctype avisa al navegador que el documento usa HTML moderno; sin el, algunos navegadores interpretan la pagina con reglas antiguas."
+  - id: q6
+    texto: "En <a href=\"/carrito\">Ir al carrito</a>, que define el atributo href?"
+    opciones:
+      - "El texto visible del enlace"
+      - "El color del enlace"
+      - "A donde lleva el enlace al hacer clic"
+      - "El grupo de estilos del enlace"
+    correcta: 2
+    explicacion: "href es el destino del enlace. El texto visible es el contenido entre las etiquetas, y los estilos se manejan con class y CSS."
