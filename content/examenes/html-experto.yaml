@@ -1,0 +1,51 @@
+slug: html-experto
+titulo: Examen del módulo HTML que conecta con CSS y JS
+track: html
+modulo: html-experto
+aprobacion: 70
+preguntas:
+  - id: q1
+    texto: "¿Cuál es la forma recomendada de conectar CSS a una página?"
+    opciones:
+      - "El atributo style en cada elemento"
+      - "Una hoja de estilos externa enlazada con <link>"
+      - "Un bloque <style> en cada página"
+      - "Dentro de un <script>"
+    correcta: 1
+    explicacion: "La hoja externa con <link> se cachea, sirve a todas las páginas y separa el aspecto del contenido. Es la forma recomendada."
+  - id: q2
+    texto: "¿Qué forma de aplicar CSS conviene evitar?"
+    opciones:
+      - "La hoja externa con <link>"
+      - "El estilo en línea con el atributo style"
+      - "Las variables CSS"
+      - "Los selectores de clase"
+    correcta: 1
+    explicacion: "El style en línea pisa al resto, mezcla aspecto con contenido y no se reutiliza; salvo casos puntuales, se evita."
+  - id: q3
+    texto: "¿Qué hace el atributo defer en un <script>?"
+    opciones:
+      - "Cancela el script"
+      - "Ejecuta el script recién cuando el HTML terminó de cargar, sin frenar la página"
+      - "Lo ejecuta antes que nada"
+      - "Lo carga solo en móviles"
+    correcta: 1
+    explicacion: "Con defer, el script se descarga en paralelo y se ejecuta después de armar el HTML, así no frena la página ni corre antes de que existan los elementos."
+  - id: q4
+    texto: "¿Cómo le da el HTML 'puntos de enganche' al JavaScript?"
+    opciones:
+      - "Con comentarios"
+      - "Con un id para encontrar el elemento y atributos data- para llevar datos"
+      - "Con la etiqueta <script> únicamente"
+      - "No se puede, son independientes"
+    correcta: 1
+    explicacion: "El JS encuentra elementos por su id y lee datos adjuntos en atributos data-; el HTML provee los ganchos y los datos, el JS la lógica."
+  - id: q5
+    texto: "Hoy, ¿dónde se recomienda colocar un <script> con defer?"
+    opciones:
+      - "En el medio del body"
+      - "En el <head>"
+      - "Después de </html>"
+      - "Dentro de un <p>"
+    correcta: 1
+    explicacion: "Con defer en el <head>, la intención queda explícita y el navegador puede empezar a descargar el script antes, sin bloquear el armado."

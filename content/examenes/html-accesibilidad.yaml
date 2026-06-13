@@ -1,0 +1,51 @@
+slug: html-accesibilidad
+titulo: Examen del módulo Accesibilidad y buenas prácticas
+track: html
+modulo: accesibilidad
+aprobacion: 70
+preguntas:
+  - id: q1
+    texto: "¿Qué declara el atributo lang=\"es\" en la etiqueta <html>?"
+    opciones:
+      - "El país del servidor"
+      - "El idioma de la página, para que los lectores de pantalla lo pronuncien bien"
+      - "La codificación de caracteres"
+      - "El idioma del sistema operativo"
+    correcta: 1
+    explicacion: "lang declara el idioma del documento: los lectores de pantalla eligen la voz y la pronunciación correctas a partir de él."
+  - id: q2
+    texto: "Un botón cuyo contenido es solo el símbolo ×, ¿cómo recibe un nombre accesible?"
+    opciones:
+      - "Con el atributo aria-label"
+      - "Con el atributo title del documento"
+      - "No hace falta"
+      - "Cambiando el símbolo por un color"
+    correcta: 0
+    explicacion: "aria-label=\"Cerrar\" le da un nombre accesible; sin él, el lector de pantalla leería solo 'equis'."
+  - id: q3
+    texto: "¿Cuál es la primera regla de ARIA?"
+    opciones:
+      - "Usar ARIA en todos los elementos"
+      - "No usar ARIA si existe un elemento HTML nativo que ya hace el trabajo"
+      - "ARIA reemplaza al HTML semántico"
+      - "Solo usar ARIA en formularios"
+    correcta: 1
+    explicacion: "Si una etiqueta nativa ya es accesible (como <button>), no se le agrega ARIA. ARIA cubre lo que el HTML nativo no puede."
+  - id: q4
+    texto: "¿Para qué sirve un enlace de salto al contenido?"
+    opciones:
+      - "Para mejorar el SEO"
+      - "Para que quien navega con teclado o lector pueda saltear el menú e ir al contenido"
+      - "Para cambiar de idioma"
+      - "Para cerrar la página"
+    correcta: 1
+    explicacion: "El enlace de salto evita recorrer todo el menú en cada página; quien usa teclado o lector va directo al contenido."
+  - id: q5
+    texto: "Si una imagen es puramente decorativa, ¿qué valor de alt conviene?"
+    opciones:
+      - "No poner alt"
+      - "alt=\"\" (vacío), para que el lector de pantalla la saltee"
+      - "alt=\"decoración\""
+      - "alt=\"imagen\""
+    correcta: 1
+    explicacion: "Un alt vacío indica que la imagen es decorativa y debe saltearse. Lo que nunca va es una <img> sin atributo alt."

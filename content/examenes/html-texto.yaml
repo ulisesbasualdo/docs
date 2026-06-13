@@ -1,0 +1,51 @@
+slug: html-texto
+titulo: Examen del módulo Texto y contenido
+track: html
+modulo: texto
+aprobacion: 70
+preguntas:
+  - id: q1
+    texto: "¿Cuántos elementos <h1> debería tener, idealmente, una página?"
+    opciones:
+      - "Uno solo, que resume de qué trata la página"
+      - "Uno por cada párrafo"
+      - "Los que quieras, no importa"
+      - "Ninguno, el h1 está obsoleto"
+    correcta: 0
+    explicacion: "El <h1> es el título principal del documento: debe haber uno solo, que diga de qué trata toda la página."
+  - id: q2
+    texto: "¿Qué comunica la etiqueta <strong> además de mostrarse en negrita?"
+    opciones:
+      - "Que el texto es un enlace"
+      - "Que el texto es de mucha importancia"
+      - "Que el texto es una cita"
+      - "Nada, es puramente visual"
+    correcta: 1
+    explicacion: "<strong> indica importancia (significado), no solo negrita. Para poner negrita por estética se usa CSS."
+  - id: q3
+    texto: "Para mostrar pasos que van en un orden determinado, ¿qué lista conviene?"
+    opciones:
+      - "<ul>, la lista sin ordenar"
+      - "<ol>, la lista ordenada"
+      - "<dl>, la lista de definición"
+      - "Da igual cuál"
+    correcta: 1
+    explicacion: "<ol> es la lista ordenada: el navegador numera los ítems solo, ideal para pasos donde la secuencia importa."
+  - id: q4
+    texto: "¿Para qué sirve la etiqueta <hr />?"
+    opciones:
+      - "Para insertar una imagen"
+      - "Para marcar una separación temática entre bloques"
+      - "Para crear un enlace"
+      - "Para resaltar texto"
+    correcta: 1
+    explicacion: "<hr /> marca un cambio de tema y se dibuja como una línea horizontal. No tiene contenido."
+  - id: q5
+    texto: "Dentro de un <ul>, ¿qué etiqueta representa cada ítem?"
+    opciones:
+      - "<item>"
+      - "<p>"
+      - "<li>"
+      - "<ul> anidado"
+    correcta: 2
+    explicacion: "Cada elemento de una lista va en su propio <li>, hijo directo del <ul> o <ol>."

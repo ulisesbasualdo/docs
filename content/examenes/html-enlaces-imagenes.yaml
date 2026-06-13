@@ -1,0 +1,51 @@
+slug: html-enlaces-imagenes
+titulo: Examen del módulo Enlaces e imágenes
+track: html
+modulo: enlaces-imagenes
+aprobacion: 70
+preguntas:
+  - id: q1
+    texto: "¿Qué atributo del elemento <a> define a dónde lleva el enlace?"
+    opciones:
+      - "src"
+      - "href"
+      - "link"
+      - "target"
+    correcta: 1
+    explicacion: "href es el destino del enlace: una ruta interna (empieza con /) o una URL completa hacia otro sitio."
+  - id: q2
+    texto: "Al usar target=\"_blank\" para abrir en otra pestaña, ¿qué conviene agregar siempre?"
+    opciones:
+      - "rel=\"noopener\""
+      - "download"
+      - "type=\"blank\""
+      - "Nada más"
+    correcta: 0
+    explicacion: "rel=\"noopener\" evita que la página abierta pueda manipular la tuya. Es una medida de seguridad."
+  - id: q3
+    texto: "¿Cuál es la función del atributo alt de una imagen?"
+    opciones:
+      - "Definir el tamaño"
+      - "Describir la imagen para quien no puede verla"
+      - "Indicar el formato del archivo"
+      - "Hacerla cargar más rápido"
+    correcta: 1
+    explicacion: "El alt es el texto alternativo: lo usan los lectores de pantalla y aparece si la imagen no carga."
+  - id: q4
+    texto: "¿Por qué conviene poner width y height en una <img>?"
+    opciones:
+      - "Para que la imagen pese menos"
+      - "Para que el navegador reserve el espacio y la página no salte al cargar"
+      - "Es obligatorio o no se muestra"
+      - "Para mejorar el SEO"
+    correcta: 1
+    explicacion: "Con las medidas, el navegador reserva el lugar antes de descargar la imagen y evita que el layout salte."
+  - id: q5
+    texto: "¿Qué etiqueta agrupa una imagen junto con su epígrafe?"
+    opciones:
+      - "<picture>"
+      - "<figure> con <figcaption>"
+      - "<image>"
+      - "<div>"
+    correcta: 1
+    explicacion: "<figure> agrupa la imagen y su <figcaption> (el pie de foto visible) como una unidad semántica."

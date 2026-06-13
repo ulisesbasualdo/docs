@@ -1,0 +1,51 @@
+slug: html-tablas
+titulo: Examen del módulo Tablas y datos
+track: html
+modulo: tablas-datos
+aprobacion: 70
+preguntas:
+  - id: q1
+    texto: "¿Para qué NO se deben usar las tablas?"
+    opciones:
+      - "Para mostrar horarios"
+      - "Para maquetar el diseño de la página"
+      - "Para comparar precios"
+      - "Para datos en filas y columnas"
+    correcta: 1
+    explicacion: "Las tablas son solo para datos tabulares. Para maquetar la página se usa CSS, nunca tablas."
+  - id: q2
+    texto: "¿Qué indica scope=\"col\" en un <th>?"
+    opciones:
+      - "El color de la celda"
+      - "Que ese encabezado manda sobre toda su columna"
+      - "El ancho de la columna"
+      - "Que la celda está vacía"
+    correcta: 1
+    explicacion: "scope=\"col\" dice que el <th> encabeza su columna; es lo que permite al lector de pantalla relacionar cada dato con su encabezado."
+  - id: q3
+    texto: "¿Qué etiqueta define el título de una tabla?"
+    opciones:
+      - "<title>"
+      - "<caption>"
+      - "<thead>"
+      - "<h2>"
+    correcta: 1
+    explicacion: "<caption> es el título de la tabla y va primero, para anticipar de qué son los datos."
+  - id: q4
+    texto: "¿Cuál es la diferencia entre <th> y <td>?"
+    opciones:
+      - "No hay diferencia"
+      - "<th> es una celda de encabezado y <td> una celda de dato"
+      - "<th> va en el cuerpo y <td> en el encabezado"
+      - "<td> es para texto y <th> para números"
+    correcta: 1
+    explicacion: "<th> (table header) es celda de encabezado; <td> (table data) es celda de dato normal."
+  - id: q5
+    texto: "¿Para qué sirve un atributo data- (por ejemplo data-precio)?"
+    opciones:
+      - "Para cambiar el estilo del elemento"
+      - "Para guardar datos propios que el JavaScript pueda leer"
+      - "Para validar formularios"
+      - "Para mejorar el SEO"
+    correcta: 1
+    explicacion: "Los atributos data- adjuntan datos personalizados a un elemento sin afectar su aspecto; son el puente prolijo hacia el JavaScript."

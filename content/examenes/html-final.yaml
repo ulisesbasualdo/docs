@@ -1,0 +1,186 @@
+slug: html-final
+titulo: Evaluación final de HTML
+track: html
+modulo: evaluacion-final
+aprobacion: 70
+preguntas:
+  - id: f1
+    texto: "Fundamentos: ¿qué sección de la página contiene lo que el visitante ve en pantalla?"
+    opciones:
+      - "<head>"
+      - "<body>"
+      - "<title>"
+      - "<!doctype html>"
+    correcta: 1
+    explicacion: "El <body> es el cuerpo visible; el <head> guarda información sobre el documento."
+  - id: f2
+    texto: "Fundamentos: si abriste <article> y dentro <h2>, ¿cuál es el orden de cierre correcto?"
+    opciones:
+      - "Primero </article>, después </h2>"
+      - "Primero </h2>, después </article>"
+      - "Da igual"
+      - "El article no se cierra"
+    correcta: 1
+    explicacion: "Las etiquetas se cierran de adentro hacia afuera: primero el hijo (h2), después el padre (article)."
+  - id: f3
+    texto: "Texto: ¿cuántos elementos <h1> debería tener idealmente una página?"
+    opciones:
+      - "Uno solo"
+      - "Uno por párrafo"
+      - "Los que quieras"
+      - "Ninguno"
+    correcta: 0
+    explicacion: "Un solo <h1> por página, que resume de qué trata todo el documento."
+  - id: f4
+    texto: "Texto: para una secuencia de pasos en orden, ¿qué lista conviene?"
+    opciones:
+      - "<ul>"
+      - "<ol>"
+      - "<dl>"
+      - "<table>"
+    correcta: 1
+    explicacion: "<ol> es la lista ordenada: el navegador numera los pasos solo."
+  - id: f5
+    texto: "Enlaces: ¿qué atributo del elemento <a> define su destino?"
+    opciones:
+      - "src"
+      - "href"
+      - "target"
+      - "rel"
+    correcta: 1
+    explicacion: "href define a dónde lleva el enlace: ruta interna o URL completa."
+  - id: f6
+    texto: "Imágenes: ¿cuál es la función del atributo alt?"
+    opciones:
+      - "Definir el tamaño"
+      - "Describir la imagen para quien no puede verla"
+      - "Acelerar la carga"
+      - "Indicar el formato"
+    correcta: 1
+    explicacion: "El alt describe la imagen para lectores de pantalla y aparece si la imagen no carga."
+  - id: f7
+    texto: "Semántica: ¿cuántos elementos <main> debe haber por página?"
+    opciones:
+      - "Uno solo"
+      - "Uno por sección"
+      - "Dos"
+      - "Los que hagan falta"
+    correcta: 0
+    explicacion: "El <main> es el contenido principal y único: va uno solo por documento."
+  - id: f8
+    texto: "Semántica: ¿cuándo conviene usar <article>?"
+    opciones:
+      - "Para cualquier bloque con borde"
+      - "Para contenido autónomo que se entiende solo"
+      - "Solo para el footer"
+      - "Para envolver toda la página"
+    correcta: 1
+    explicacion: "<article> es contenido autónomo: si lo sacás de la página, sigue teniendo sentido."
+  - id: f9
+    texto: "Formularios: ¿qué conecta un <label> con su campo?"
+    opciones:
+      - "El for del label, que coincide con el id del input"
+      - "Que estén cerca en el código"
+      - "El atributo name"
+      - "Un atributo link"
+    correcta: 0
+    explicacion: "El for del label debe coincidir con el id del input para enlazarlos."
+  - id: f10
+    texto: "Formularios: ¿qué atributo hace obligatorio un campo?"
+    opciones:
+      - "mandatory"
+      - "required"
+      - "min"
+      - "validate"
+    correcta: 1
+    explicacion: "required hace el campo obligatorio; el navegador frena el envío si está vacío."
+  - id: f11
+    texto: "Tablas: ¿para qué NO se deben usar?"
+    opciones:
+      - "Para mostrar horarios"
+      - "Para maquetar el diseño de la página"
+      - "Para comparar precios"
+      - "Para datos en filas y columnas"
+    correcta: 1
+    explicacion: "Las tablas son solo para datos tabulares; para maquetar se usa CSS."
+  - id: f12
+    texto: "Tablas: ¿qué indica scope=\"col\" en un <th>?"
+    opciones:
+      - "El color"
+      - "Que ese encabezado manda sobre toda su columna"
+      - "El ancho"
+      - "Que está vacío"
+    correcta: 1
+    explicacion: "scope=\"col\" relaciona el encabezado con su columna; clave para la accesibilidad."
+  - id: f13
+    texto: "Multimedia: ¿qué atributo muestra los botones de reproducción en un <video>?"
+    opciones:
+      - "play"
+      - "controls"
+      - "autoplay"
+      - "buttons"
+    correcta: 1
+    explicacion: "Sin controls, el video no muestra los botones de reproducción."
+  - id: f14
+    texto: "Multimedia: ¿qué atributo del <iframe> es obligatorio para la accesibilidad?"
+    opciones:
+      - "src"
+      - "title"
+      - "width"
+      - "loading"
+    correcta: 1
+    explicacion: "El title describe el contenido embebido, que el lector de pantalla no puede leer por dentro."
+  - id: f15
+    texto: "Accesibilidad: ¿qué declara lang=\"es\" en <html>?"
+    opciones:
+      - "El país del servidor"
+      - "El idioma de la página, para la pronunciación de los lectores de pantalla"
+      - "La codificación"
+      - "El idioma del sistema"
+    correcta: 1
+    explicacion: "lang define el idioma del documento, y con él la voz y pronunciación del lector de pantalla."
+  - id: f16
+    texto: "Accesibilidad: un botón con solo el ícono ×, ¿cómo recibe un nombre accesible?"
+    opciones:
+      - "Con aria-label"
+      - "Con el title del documento"
+      - "No hace falta"
+      - "Con un color"
+    correcta: 0
+    explicacion: "aria-label le da un nombre accesible; sin él, el lector leería solo 'equis'."
+  - id: f17
+    texto: "SEO: ¿dónde aparece el contenido del <title>?"
+    opciones:
+      - "En el medio de la página"
+      - "En la pestaña del navegador y en los resultados de Google"
+      - "Solo en el body"
+      - "En el footer"
+    correcta: 1
+    explicacion: "El <title> es la pestaña y el título azul de los resultados de búsqueda."
+  - id: f18
+    texto: "SEO: ¿qué controlan las metaetiquetas og: (Open Graph)?"
+    opciones:
+      - "La codificación"
+      - "La tarjeta de vista previa al compartir el enlace en redes"
+      - "El idioma"
+      - "La validación de formularios"
+    correcta: 1
+    explicacion: "Open Graph define título, descripción e imagen de la vista previa al compartir."
+  - id: f19
+    texto: "Experto: ¿cuál es la forma recomendada de conectar CSS?"
+    opciones:
+      - "El atributo style en cada elemento"
+      - "Una hoja externa enlazada con <link>"
+      - "Un <style> en cada página"
+      - "Dentro de un <script>"
+    correcta: 1
+    explicacion: "La hoja externa con <link> se cachea, sirve a todo el sitio y separa aspecto de contenido."
+  - id: f20
+    texto: "Experto: ¿qué hace el atributo defer en un <script>?"
+    opciones:
+      - "Cancela el script"
+      - "Lo ejecuta después de cargar el HTML, sin frenar la página"
+      - "Lo ejecuta antes que nada"
+      - "Lo carga solo en móviles"
+    correcta: 1
+    explicacion: "Con defer, el script corre cuando el HTML ya está armado, sin bloquear la carga."

@@ -1,0 +1,51 @@
+slug: html-multimedia
+titulo: Examen del módulo Multimedia e incrustados
+track: html
+modulo: multimedia
+aprobacion: 70
+preguntas:
+  - id: q1
+    texto: "¿Qué atributo muestra los botones de reproducción en un <video>?"
+    opciones:
+      - "play"
+      - "controls"
+      - "autoplay"
+      - "buttons"
+    correcta: 1
+    explicacion: "Sin el atributo controls, el video no muestra los botones de play, volumen ni la barra de progreso."
+  - id: q2
+    texto: "¿Qué es el texto que va entre <video> y </video>?"
+    opciones:
+      - "Los subtítulos"
+      - "Un mensaje de respaldo que se ve solo si el navegador no puede reproducir el video"
+      - "El título del video"
+      - "Una descripción para Google"
+    correcta: 1
+    explicacion: "Ese texto es el respaldo: en un navegador moderno nunca se ve, solo aparece si no puede reproducir el contenido."
+  - id: q3
+    texto: "¿Qué atributo del <iframe> es obligatorio para la accesibilidad?"
+    opciones:
+      - "src"
+      - "title"
+      - "width"
+      - "loading"
+    correcta: 1
+    explicacion: "El title describe qué contiene el iframe, porque el lector de pantalla no puede entrar a leer la página embebida."
+  - id: q4
+    texto: "¿Qué hace loading=\"lazy\" en un <iframe>?"
+    opciones:
+      - "Lo carga recién cuando el usuario se acerca, acelerando la carga inicial"
+      - "Lo reproduce automáticamente"
+      - "Lo oculta"
+      - "Lo hace más rápido siempre"
+    correcta: 0
+    explicacion: "loading=\"lazy\" difiere la carga del iframe hasta que el usuario se acerca, lo que mejora el tiempo de carga inicial de la página."
+  - id: q5
+    texto: "¿Qué muestra el atributo poster de un <video>?"
+    opciones:
+      - "Los subtítulos"
+      - "La imagen de portada que se ve antes de darle play"
+      - "El nombre del archivo"
+      - "Un anuncio"
+    correcta: 1
+    explicacion: "poster es la imagen de portada que se muestra mientras nadie aprieta play."

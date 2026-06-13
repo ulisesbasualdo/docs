@@ -1,0 +1,51 @@
+slug: html-formularios
+titulo: Examen del módulo Formularios
+track: html
+modulo: formularios
+aprobacion: 70
+preguntas:
+  - id: q1
+    texto: "¿Qué conecta un <label> con su campo de entrada?"
+    opciones:
+      - "El atributo for del label, que coincide con el id del input"
+      - "Que estén cerca en el código"
+      - "El atributo name"
+      - "Un atributo link"
+    correcta: 0
+    explicacion: "El for del label debe coincidir con el id del input. Eso los enlaza: al tocar el texto se activa el campo y el lector lo anuncia."
+  - id: q2
+    texto: "¿Qué hace method=\"post\" en un <form>?"
+    opciones:
+      - "Muestra los datos en la URL"
+      - "Envía los datos en el cuerpo del pedido"
+      - "Valida el formulario"
+      - "Lo envía por email"
+    correcta: 1
+    explicacion: "post manda los datos en el cuerpo del pedido, lo correcto para crear o enviar algo; get los pondría en la URL."
+  - id: q3
+    texto: "¿Qué atributo hace que un campo sea obligatorio?"
+    opciones:
+      - "mandatory"
+      - "required"
+      - "min"
+      - "validate"
+    correcta: 1
+    explicacion: "required hace el campo obligatorio: el navegador no deja enviar el formulario si está vacío y avisa solo."
+  - id: q4
+    texto: "Si validás un formulario solo con atributos HTML en el navegador, ¿qué falta?"
+    opciones:
+      - "Nada, con eso alcanza"
+      - "Volver a validar en el servidor, porque la validación del navegador se puede saltear"
+      - "Agregar más CSS"
+      - "Usar method get"
+    correcta: 1
+    explicacion: "La validación nativa mejora la experiencia, pero un usuario puede saltearla. El servidor siempre debe revalidar."
+  - id: q5
+    texto: "¿Qué etiqueta crea una lista desplegable de opciones?"
+    opciones:
+      - "<input type=\"list\">"
+      - "<dropdown>"
+      - "<select> con elementos <option>"
+      - "<ul>"
+    correcta: 2
+    explicacion: "<select> arma el desplegable y cada <option> es una opción; el value viaja al servidor y el texto lo ve el usuario."

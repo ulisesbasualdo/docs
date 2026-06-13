@@ -10,19 +10,31 @@ modulos:
     quiz: html-fundamentos
   - slug: texto
     titulo: Texto y contenido
+    quiz: html-texto
   - slug: enlaces-imagenes
     titulo: Enlaces e imágenes
+    quiz: html-enlaces-imagenes
   - slug: estructura-semantica
     titulo: Estructura semántica
+    quiz: html-semantica
   - slug: formularios
     titulo: Formularios
+    quiz: html-formularios
   - slug: tablas-datos
     titulo: Tablas y datos
+    quiz: html-tablas
   - slug: multimedia
     titulo: Multimedia e incrustados
+    quiz: html-multimedia
   - slug: accesibilidad
     titulo: Accesibilidad y buenas prácticas
+    quiz: html-accesibilidad
   - slug: metadatos-seo
     titulo: Metadatos y SEO
+    quiz: html-seo
   - slug: html-experto
     titulo: HTML que conecta con CSS y JS
+    quiz: html-experto
+  - slug: evaluacion-final
+    titulo: Evaluación final
+    quiz: html-final

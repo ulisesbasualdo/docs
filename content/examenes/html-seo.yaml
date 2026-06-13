@@ -1,0 +1,51 @@
+slug: html-seo
+titulo: Examen del módulo Metadatos y SEO
+track: html
+modulo: metadatos-seo
+aprobacion: 70
+preguntas:
+  - id: q1
+    texto: "¿Dónde aparece el contenido del elemento <title>?"
+    opciones:
+      - "En el medio de la página"
+      - "En la pestaña del navegador y como título en los resultados de Google"
+      - "Solo dentro del body"
+      - "En el pie de página"
+    correcta: 1
+    explicacion: "El <title> es el texto de la pestaña y el título azul en los resultados de búsqueda; es clave para el SEO."
+  - id: q2
+    texto: "¿Qué hace <meta charset=\"utf-8\" />?"
+    opciones:
+      - "Define el idioma"
+      - "Declara la codificación, para que tildes, ñ y emojis se muestren bien"
+      - "Mejora la velocidad"
+      - "Conecta el CSS"
+    correcta: 1
+    explicacion: "UTF-8 es la codificación que entiende tildes, ñ y emojis. Sin ella, un 'café' puede verse como 'cafÃ©'."
+  - id: q3
+    texto: "¿Para qué sirve la meta viewport?"
+    opciones:
+      - "Para que la página se adapte al ancho real del celular"
+      - "Para validar formularios"
+      - "Para mejorar el ranking en Google directamente"
+      - "Para definir colores"
+    correcta: 0
+    explicacion: "La meta viewport hace que el celular use su ancho real; sin ella, el diseño responsive no funciona y la página se ve diminuta."
+  - id: q4
+    texto: "¿Qué controlan las metaetiquetas que empiezan con og: (Open Graph)?"
+    opciones:
+      - "La codificación de la página"
+      - "La tarjeta de vista previa que aparece al compartir el enlace en redes y chats"
+      - "El idioma de la página"
+      - "La validación de formularios"
+    correcta: 1
+    explicacion: "Open Graph define el título, la descripción y la imagen de la tarjeta de vista previa cuando se comparte el enlace."
+  - id: q5
+    texto: "¿Qué requisito tiene la imagen de og:image?"
+    opciones:
+      - "Debe ser un GIF"
+      - "Debe ser una URL absoluta (con https:// y dominio completo)"
+      - "Debe pesar menos de 1 KB"
+      - "Debe estar en el body"
+    correcta: 1
+    explicacion: "og:image necesita URL absoluta, porque la lee un servidor externo que no sabe cuál es tu sitio."

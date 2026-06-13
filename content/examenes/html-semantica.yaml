@@ -1,0 +1,51 @@
+slug: html-semantica
+titulo: Examen del módulo Estructura semántica
+track: html
+modulo: estructura-semantica
+aprobacion: 70
+preguntas:
+  - id: q1
+    texto: "¿Cuántos elementos <main> debe haber por página?"
+    opciones:
+      - "Uno solo"
+      - "Uno por cada sección"
+      - "Dos: uno arriba y uno abajo"
+      - "Los que hagan falta"
+    correcta: 0
+    explicacion: "El <main> es el contenido principal y único de la página: va uno solo y no incluye lo que se repite (header, nav, footer)."
+  - id: q2
+    texto: "¿Qué etiqueta envuelve la navegación principal del sitio?"
+    opciones:
+      - "<menu>"
+      - "<nav>"
+      - "<header>"
+      - "<links>"
+    correcta: 1
+    explicacion: "<nav> marca el grupo de enlaces de navegación, y permite saltar al menú o saltearlo con un lector de pantalla."
+  - id: q3
+    texto: "¿Cuándo conviene usar <article>?"
+    opciones:
+      - "Para cualquier bloque con borde"
+      - "Para contenido autónomo, que se entiende solo fuera de la página"
+      - "Solo para el pie de página"
+      - "Para envolver toda la página"
+    correcta: 1
+    explicacion: "<article> es contenido autónomo: si lo sacás de la página y sigue teniendo sentido (una ficha, una nota), es un article."
+  - id: q4
+    texto: "¿Qué representa el elemento <aside>?"
+    opciones:
+      - "El contenido más importante"
+      - "Contenido secundario o tangencial, relacionado pero no central"
+      - "El encabezado de la página"
+      - "Un formulario"
+    correcta: 1
+    explicacion: "<aside> es contenido complementario (recomendaciones, notas al margen); el lector de pantalla lo anuncia como secundario."
+  - id: q5
+    texto: "¿Cuál es la ventaja de usar etiquetas semánticas en vez de <div> para todo?"
+    opciones:
+      - "Pesan menos kilobytes"
+      - "Le dan estructura entendible a Google y a los lectores de pantalla"
+      - "Cambian los colores automáticamente"
+      - "No tienen ninguna ventaja real"
+    correcta: 1
+    explicacion: "Las etiquetas semánticas no cambian el aspecto, pero dan estructura real: mejoran el SEO y la navegación por regiones."

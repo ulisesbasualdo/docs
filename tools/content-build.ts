@@ -200,7 +200,7 @@ function agruparTrack(
       quiz: m.quiz,
       lecciones: ordenadas.filter((r) => r.modulo === m.slug),
     }))
-    .filter((m) => m.lecciones.length > 0);
+    .filter((m) => m.lecciones.length > 0 || !!m.quiz);
 
   return {
     trackDoc: { tecnologia: meta.tecnologia, titulo: meta.titulo, descripcion: meta.descripcion, modulos },
