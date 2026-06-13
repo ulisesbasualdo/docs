@@ -45,7 +45,7 @@ import { Seo } from '../seo';
           [class.is-done]="progreso.estaCompletada(c.slug)"
           (click)="progreso.alternar(c.slug)"
         >
-          {{ progreso.estaCompletada(c.slug) ? '✓ Leccion completada' : 'Marcar como completada' }}
+          {{ progreso.estaCompletada(c.slug) ? '✓ Lección completada' : 'Marcar como completada' }}
         </button>
         <div class="leccion-nav__links">
           @if (c.anterior) {
@@ -64,7 +64,7 @@ import { Seo } from '../seo';
         </div>
       </div>
     } @else {
-      <p class="concepto-intro">Cargando leccion...</p>
+      <p class="concepto-intro">Cargando lección...</p>
     }
   `,
 })

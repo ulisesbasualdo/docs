@@ -55,7 +55,7 @@ describe('TrackPagina', () => {
     expect(elemento.querySelector('h1')?.textContent).toBe('HTML de cero a experto');
     expect(elemento.querySelectorAll('.modulo').length).toBe(2);
     expect(elemento.querySelector('.leccion-fila__titulo')?.textContent).toContain('Que es una etiqueta');
-    expect(elemento.querySelector('.leccion-fila--examen')?.textContent).toContain('Evaluacion del modulo');
+    expect(elemento.querySelector('.leccion-fila--examen')?.textContent).toContain('Evaluación del módulo');
     expect(elemento.querySelector('.badge-acceso--nivel')?.textContent?.trim()).toBe('introductorio');
     expect(document.title).toContain('HTML de cero a experto');
   });

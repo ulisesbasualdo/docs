@@ -82,7 +82,7 @@ describe('LeccionPagina', () => {
     boton.click();
     await fixture.whenStable();
 
-    expect(boton.textContent).toContain('✓ Leccion completada');
+    expect(boton.textContent).toContain('✓ Lección completada');
   });
 
   it('muestra el estado de carga mientras no llego la leccion', async () => {
@@ -95,6 +95,6 @@ describe('LeccionPagina', () => {
     fixture.componentRef.setInput('leccion', 'x');
     await fixture.whenStable();
 
-    expect(fixture.nativeElement.textContent).toContain('Cargando leccion');
+    expect(fixture.nativeElement.textContent).toContain('Cargando lección');
   });
 });

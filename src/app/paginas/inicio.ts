@@ -10,9 +10,9 @@ import { Seo } from '../seo';
   imports: [UpperCasePipe, RouterLink],
   template: `
     <header class="concepto-head">
-      <h1>Aprende a programar, linea por linea</h1>
+      <h1>Aprende a programar, línea por línea</h1>
       <h2>Cursos interactivos y gratuitos, con ejemplos reales y explicaciones que no saltean nada.</h2>
-      <h3>Elegi una tecnologia para empezar</h3>
+      <h3>Elegí una tecnología para empezar</h3>
     </header>
 
     <ul class="lista-conceptos">
@@ -23,12 +23,12 @@ import { Seo } from '../seo';
             <span class="card-concepto__titulo">{{ track.tecnologia | uppercase }}</span>
             <p class="card-concepto__desc">{{ track.descripcion }}</p>
             <p class="card-concepto__pie">
-              {{ track.lecciones }} {{ track.lecciones === 1 ? 'leccion' : 'lecciones' }}
+              {{ track.lecciones }} {{ track.lecciones === 1 ? 'lección' : 'lecciones' }}
             </p>
           </a>
         </li>
       } @empty {
-        <li class="lista-conceptos__vacio">Todavia no hay cursos publicados.</li>
+        <li class="lista-conceptos__vacio">Todavía no hay cursos publicados.</li>
       }
     </ul>
   `,
@@ -41,9 +41,9 @@ export class Inicio {
 
   constructor() {
     this.seo.aplicar({
-      titulo: 'Docs — Aprende a programar linea por linea — Ulises Basualdo',
+      titulo: 'Docs — Aprende a programar línea por línea — Ulises Basualdo',
       descripcion:
-        'Cursos interactivos y gratuitos de HTML, CSS y JavaScript explicados linea por linea, con analogias de la vida real y examenes por modulo.',
+        'Cursos interactivos y gratuitos de HTML, CSS y JavaScript explicados línea por línea, con analogías de la vida real y exámenes por módulo.',
       rutaCanonica: '/',
     });
   }

@@ -42,7 +42,7 @@ import { Seo } from '../seo';
               <li>
                 <a class="leccion-fila leccion-fila--examen" [routerLink]="['/', t.tecnologia, 'examen', modulo.quiz]">
                   <span class="leccion-fila__check" aria-hidden="true">?</span>
-                  <span class="leccion-fila__titulo">Evaluacion del modulo</span>
+                  <span class="leccion-fila__titulo">Evaluación del módulo</span>
                   <span class="badge-acceso badge-acceso--examen">Examen</span>
                 </a>
               </li>

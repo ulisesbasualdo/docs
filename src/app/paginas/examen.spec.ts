@@ -88,7 +88,7 @@ describe('ExamenPagina', () => {
     (elemento.querySelector('.btn-completar') as HTMLButtonElement).click();
     await fixture.whenStable();
 
-    expect(elemento.textContent).toContain('Todavia no');
+    expect(elemento.textContent).toContain('Todavía no');
     expect(elemento.textContent).toContain('Era la a.');
     expect(elemento.querySelectorAll('.examen-opcion.is-incorrecta').length).toBe(2);
 

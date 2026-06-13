@@ -4,8 +4,8 @@ import { SafeHtmlPipe } from './safe-html-pipe';
 export type TipoBloque = 'tecnica' | 'analogia' | 'nota';
 
 const ETIQUETAS: Record<TipoBloque, string> = {
-  tecnica: 'Tecnico',
-  analogia: 'Analogia',
+  tecnica: 'Técnico',
+  analogia: 'Analogía',
   nota: 'Nota de elegancia',
 };
 

@@ -30,13 +30,13 @@ describe('Inicio', () => {
     expect(tarjetas.length).toBe(2);
     expect(tarjetas[0].textContent).toContain('HTML');
     expect(tarjetas[0].textContent).toContain('4 lecciones');
-    expect(tarjetas[1].textContent).toContain('1 leccion');
+    expect(tarjetas[1].textContent).toContain('1 lección');
     expect(document.title).toContain('Aprende a programar');
   });
 
   it('muestra el estado vacio cuando no hay cursos', async () => {
     const elemento = await renderizar([]);
 
-    expect(elemento.querySelector('.lista-conceptos__vacio')?.textContent).toContain('Todavia no hay cursos');
+    expect(elemento.querySelector('.lista-conceptos__vacio')?.textContent).toContain('Todavía no hay cursos');
   });
 });

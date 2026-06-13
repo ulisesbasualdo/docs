@@ -1,8 +1,8 @@
 tecnologia: html
 titulo: HTML de cero a experto
 descripcion: >-
-  Aprende a construir paginas web desde la primera etiqueta hasta HTML semantico,
-  accesible y listo para produccion. Sin dar nada por sabido: empezamos desde
+  Aprende a construir páginas web desde la primera etiqueta hasta HTML semántico,
+  accesible y listo para producción. Sin dar nada por sabido: empezamos desde
   cero absoluto, con ejemplos reales de negocios y usuarios.
 modulos:
   - slug: fundamentos
@@ -11,9 +11,9 @@ modulos:
   - slug: texto
     titulo: Texto y contenido
   - slug: enlaces-imagenes
-    titulo: Enlaces e imagenes
+    titulo: Enlaces e imágenes
   - slug: estructura-semantica
-    titulo: Estructura semantica
+    titulo: Estructura semántica
   - slug: formularios
     titulo: Formularios
   - slug: tablas-datos
@@ -21,7 +21,7 @@ modulos:
   - slug: multimedia
     titulo: Multimedia e incrustados
   - slug: accesibilidad
-    titulo: Accesibilidad y buenas practicas
+    titulo: Accesibilidad y buenas prácticas
   - slug: metadatos-seo
     titulo: Metadatos y SEO
   - slug: html-experto

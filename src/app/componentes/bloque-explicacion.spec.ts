@@ -11,8 +11,8 @@ describe('BloqueExplicacion', () => {
   }
 
   it.each([
-    ['tecnica', 'Tecnico'],
-    ['analogia', 'Analogia'],
+    ['tecnica', 'Técnico'],
+    ['analogia', 'Analogía'],
     ['nota', 'Nota de elegancia'],
   ] as const)('renderiza el bloque %s con su etiqueta', async (tipo, etiqueta) => {
     const elemento = await renderizar(tipo, '<p>contenido</p>');

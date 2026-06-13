@@ -30,8 +30,8 @@ export function corregir(examen: Examen, respuestas: Record<string, number>): Re
         <a class="leccion-track" [routerLink]="['/', ex.track]">← Volver al curso</a>
         <h1>{{ ex.titulo }}</h1>
         <p class="concepto-intro">
-          {{ ex.preguntas.length }} preguntas. Necesitas {{ ex.aprobacion }}% para aprobar. El resultado no se guarda:
-          es para que vos sepas donde estas parado.
+          {{ ex.preguntas.length }} preguntas. Necesitás {{ ex.aprobacion }}% para aprobar. El resultado no se guarda:
+          es para que vos sepas dónde estás parado.
         </p>
       </header>
 
@@ -64,10 +64,10 @@ export function corregir(examen: Examen, respuestas: Record<string, number>): Re
 
       @if (resultado(); as r) {
         <section class="examen-resultado" [class.is-aprobado]="r.aprobado">
-          <h2>{{ r.aprobado ? 'Aprobado' : 'Todavia no' }}</h2>
+          <h2>{{ r.aprobado ? 'Aprobado' : 'Todavía no' }}</h2>
           <p>
             Respondiste bien {{ r.puntaje }} de {{ r.total }} ({{ r.porcentaje }}%).
-            {{ r.aprobado ? 'Excelente trabajo.' : 'Repasa las lecciones del modulo y volve a intentarlo.' }}
+            {{ r.aprobado ? 'Excelente trabajo.' : 'Repasá las lecciones del módulo y volvé a intentarlo.' }}
           </p>
           <div class="leccion-nav__links">
             <button type="button" class="btn-completar" (click)="reiniciar()">Intentar de nuevo</button>
@@ -119,7 +119,7 @@ export class ExamenPagina {
       if (ex) {
         this.seo.aplicar({
           titulo: `${ex.titulo} — Docs — Ulises Basualdo`,
-          descripcion: `Evaluacion del modulo, ${ex.preguntas.length} preguntas multiple choice con correccion al instante.`,
+          descripcion: `Evaluación del módulo, ${ex.preguntas.length} preguntas multiple choice con corrección al instante.`,
           rutaCanonica: `/${ex.track}/examen/${ex.slug}`,
         });
       }

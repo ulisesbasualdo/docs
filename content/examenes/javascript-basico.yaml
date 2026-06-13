@@ -1,60 +1,60 @@
 slug: javascript-basico
-titulo: Examen del modulo JavaScript basico
+titulo: Examen del módulo JavaScript básico
 track: javascript
 modulo: js-basico
 aprobacion: 70
 preguntas:
   - id: q1
-    texto: "Cual es la diferencia entre const y let?"
+    texto: "¿Cuál es la diferencia entre const y let?"
     opciones:
-      - "const es para numeros y let para textos"
-      - "const no permite reasignar el valor; let si"
-      - "let es mas rapido que const"
+      - "const es para números y let para textos"
+      - "const no permite reasignar el valor; let sí"
+      - "let es más rápido que const"
       - "No hay diferencia"
     correcta: 1
-    explicacion: "const declara variables que no se pueden reasignar; let, variables que si. La buena practica es const por defecto y let solo cuando el valor va a cambiar."
+    explicacion: "const declara variables que no se pueden reasignar; let, variables que sí. La buena práctica es const por defecto y let solo cuando el valor va a cambiar."
   - id: q2
-    texto: "Que guarda la linea: let productosEnCarrito = 0;"
+    texto: "¿Qué guarda la línea let productosEnCarrito = 0;?"
     opciones:
       - "El texto '0'"
-      - "El numero 0"
+      - "El número 0"
       - "Un booleano falso"
-      - "Una lista vacia"
+      - "Una lista vacía"
     correcta: 1
-    explicacion: "Sin comillas, 0 es un number. Con comillas ('0') seria un string, que es un tipo distinto y no conviene mezclar."
+    explicacion: "Sin comillas, 0 es un number. Con comillas ('0') sería un string, que es un tipo distinto y no conviene mezclar."
   - id: q3
-    texto: "En if (totalCompra >= 20000) { ... }, que tipo de valor produce la comparacion?"
+    texto: "En if (totalCompra >= 20000) { ... }, ¿qué tipo de valor produce la comparación?"
     opciones:
-      - "Un numero"
+      - "Un número"
       - "Un texto"
       - "Un booleano: true o false"
       - "Una variable nueva"
     correcta: 2
-    explicacion: "Toda comparacion produce un booleano. El if ejecuta su bloque solo si el resultado es true."
+    explicacion: "Toda comparación produce un booleano. El if ejecuta su bloque solo si el resultado es true."
   - id: q4
-    texto: "Cuando se ejecuta el bloque del else?"
+    texto: "¿Cuándo se ejecuta el bloque del else?"
     opciones:
-      - "Siempre, despues del if"
-      - "Solo cuando la condicion del if dio false"
-      - "Solo cuando la condicion del if dio true"
+      - "Siempre, después del if"
+      - "Solo cuando la condición del if dio false"
+      - "Solo cuando la condición del if dio true"
       - "Nunca, es decorativo"
     correcta: 1
-    explicacion: "El else es el camino del no: se ejecuta unicamente cuando la condicion del if no se cumplio."
+    explicacion: "El else es el camino del no: se ejecuta únicamente cuando la condición del if no se cumplió."
   - id: q5
-    texto: "Que convencion de nombres usa JavaScript para variables como productosEnCarrito?"
+    texto: "¿Qué convención de nombres usa JavaScript para variables como productosEnCarrito?"
     opciones:
       - "snake_case"
       - "camelCase"
       - "kebab-case"
-      - "MAYUSCULAS"
+      - "MAYÚSCULAS"
     correcta: 1
-    explicacion: "camelCase: palabras pegadas con mayuscula interna. Es la convencion estandar para variables y funciones en JavaScript."
+    explicacion: "camelCase: palabras pegadas con mayúscula interna. Es la convención estándar para variables y funciones en JavaScript."
   - id: q6
-    texto: "Que hace el signo = en productosEnCarrito = productosEnCarrito + 1;"
+    texto: "¿Qué hace el signo = en productosEnCarrito = productosEnCarrito + 1;?"
     opciones:
       - "Compara los dos lados"
       - "Calcula la derecha y guarda el resultado en la variable de la izquierda"
       - "Declara una variable nueva"
       - "Suma uno a ambos lados"
     correcta: 1
-    explicacion: "El = es asignacion, no igualdad: primero se evalua la expresion de la derecha y el resultado se guarda en la variable."
+    explicacion: "El = es asignación, no igualdad: primero se evalúa la expresión de la derecha y el resultado se guarda en la variable."

@@ -28,7 +28,7 @@ const CONTACTO: EnlaceContacto[] = [
       </header>
       <router-outlet />
       <footer class="docs-footer">
-        <p>Documentacion linea por linea, gratuita y de codigo abierto.</p>
+        <p>Documentación línea por línea, gratuita y de código abierto.</p>
         <nav class="docs-footer__contacto" aria-label="Contacto con el desarrollador">
           @for (enlace of contacto; track enlace.url) {
             <a [href]="enlace.url" target="_blank" rel="noopener">{{ enlace.etiqueta }}</a>

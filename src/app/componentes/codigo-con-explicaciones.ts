@@ -27,13 +27,13 @@ import type { ArchivoResaltado } from '../contenido/esquema';
       </div>
     }
 
-    <p class="hint hint--mobile">Toca cualquier linea de codigo para leer la explicacion.</p>
-    <p class="hint hint--desktop">Pasa el cursor sobre una linea de codigo para leer su explicacion a la derecha.</p>
+    <p class="hint hint--mobile">Tocá cualquier línea de código para leer la explicación.</p>
+    <p class="hint hint--desktop">Pasá el cursor sobre una línea de código para leer su explicación a la derecha.</p>
 
     @for (archivo of lista; track archivo.nombre; let i = $index) {
       <div class="archivo" [hidden]="i !== archivoActivoIdx()">
         <div class="layout">
-          <div class="codigo" role="group" [attr.aria-label]="'Codigo de ' + archivo.nombre">
+          <div class="codigo" role="group" [attr.aria-label]="'Código de ' + archivo.nombre">
             @for (linea of archivo.lineas; track linea.id) {
               <button
                 class="linea"
@@ -50,7 +50,7 @@ import type { ArchivoResaltado } from '../contenido/esquema';
 
           <aside class="panel" aria-label="Explicaciones">
             <div class="panel__placeholder">
-              <p>Pasa el cursor sobre una linea de codigo para leer su explicacion.</p>
+              <p>Pasá el cursor sobre una línea de código para leer su explicación.</p>
             </div>
 
             @for (exp of archivo.explicaciones; track exp.para) {

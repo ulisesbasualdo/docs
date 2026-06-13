@@ -2,11 +2,11 @@ tecnologia: javascript
 titulo: JavaScript de cero a experto
 descripcion: >-
   El lenguaje que le da vida a la web. Desde tu primera variable hasta
-  asincronismo, buenas practicas y codigo limpio, con ejemplos de negocios
+  asincronismo, buenas prácticas y código limpio, con ejemplos de negocios
   y usuarios reales.
 modulos:
   - slug: js-basico
-    titulo: JavaScript basico
+    titulo: JavaScript básico
     quiz: javascript-basico
   - slug: funciones
     titulo: Funciones
@@ -15,7 +15,7 @@ modulos:
   - slug: control-de-flujo
     titulo: Control de flujo
   - slug: dom
-    titulo: Manipular la pagina (DOM)
+    titulo: Manipular la página (DOM)
   - slug: eventos
     titulo: Eventos
   - slug: asincronismo
@@ -23,4 +23,4 @@ modulos:
   - slug: errores
     titulo: Manejo de errores
   - slug: codigo-limpio
-    titulo: Codigo limpio y buenas practicas
+    titulo: Código limpio y buenas prácticas
