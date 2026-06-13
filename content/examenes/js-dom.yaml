@@ -1,0 +1,42 @@
+slug: js-dom
+titulo: Examen del módulo Manipular la página (DOM)
+track: javascript
+modulo: dom
+aprobacion: 70
+preguntas:
+  - id: q1
+    texto: "¿Qué devuelve document.querySelector('h1')?"
+    opciones:
+      - "Todos los h1 de la página"
+      - "El primer elemento que coincide con el selector"
+      - "El texto del h1"
+      - "Un array de textos"
+    correcta: 1
+    explicacion: "querySelector devuelve el primer elemento que coincide con el selector CSS. Para todos, está querySelectorAll."
+  - id: q2
+    texto: "Si asignás un valor a elemento.textContent, ¿qué ocurre?"
+    opciones:
+      - "Se borra el elemento"
+      - "Cambia su texto en vivo, sin recargar la página"
+      - "Solo funciona en formularios"
+      - "Da error"
+    correcta: 1
+    explicacion: "Asignar textContent reemplaza el texto del elemento al instante; así JavaScript hace dinámico un HTML estático."
+  - id: q3
+    texto: "¿Qué hace document.createElement('li')?"
+    opciones:
+      - "Lo agrega de inmediato a la página"
+      - "Crea el elemento en memoria, todavía sin insertarlo"
+      - "Busca un li existente"
+      - "Borra una lista"
+    correcta: 1
+    explicacion: "createElement fabrica el elemento en memoria; no aparece en la página hasta insertarlo (por ejemplo con append)."
+  - id: q4
+    texto: "¿Qué hace append(item) sobre un elemento?"
+    opciones:
+      - "Lo oculta"
+      - "Inserta item como último hijo de ese elemento"
+      - "Lo elimina"
+      - "Copia su texto"
+    correcta: 1
+    explicacion: "append inserta el elemento como último hijo; recién ahí el contenido nuevo aparece en pantalla."

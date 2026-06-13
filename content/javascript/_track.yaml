@@ -10,17 +10,28 @@ modulos:
     quiz: javascript-basico
   - slug: funciones
     titulo: Funciones
+    quiz: js-funciones
   - slug: arrays-objetos
     titulo: Arrays y objetos
+    quiz: js-arrays-objetos
   - slug: control-de-flujo
     titulo: Control de flujo
+    quiz: js-control-flujo
   - slug: dom
     titulo: Manipular la página (DOM)
+    quiz: js-dom
   - slug: eventos
     titulo: Eventos
+    quiz: js-eventos
   - slug: asincronismo
     titulo: Asincronismo
+    quiz: js-asincronismo
   - slug: errores
     titulo: Manejo de errores
+    quiz: js-errores
   - slug: codigo-limpio
     titulo: Código limpio y buenas prácticas
+    quiz: js-codigo-limpio
+  - slug: evaluacion-final
+    titulo: Evaluación final
+    quiz: js-final

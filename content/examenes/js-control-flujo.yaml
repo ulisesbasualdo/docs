@@ -1,0 +1,42 @@
+slug: js-control-flujo
+titulo: Examen del módulo Control de flujo
+track: javascript
+modulo: control-de-flujo
+aprobacion: 70
+preguntas:
+  - id: q1
+    texto: "¿Qué recorre un bucle for...of?"
+    opciones:
+      - "Las claves de un objeto"
+      - "Los valores de un array, uno por uno"
+      - "Solo números"
+      - "Las propiedades CSS"
+    correcta: 1
+    explicacion: "for...of recorre los valores de un array (o iterable): 'para cada elemento, hacé esto'."
+  - id: q2
+    texto: "¿Hasta cuándo repite un bucle while?"
+    opciones:
+      - "Tres veces siempre"
+      - "Mientras su condición sea verdadera"
+      - "Una sola vez"
+      - "Hasta que el usuario lo detenga"
+    correcta: 1
+    explicacion: "while repite mientras la condición sea true; cuando se vuelve false, corta."
+  - id: q3
+    texto: "¿Qué provoca un bucle infinito en un while?"
+    opciones:
+      - "Usar const"
+      - "No actualizar nunca la condición dentro del bucle"
+      - "Poner un return"
+      - "Recorrer un array vacío"
+    correcta: 1
+    explicacion: "Si nada acerca la condición a false, el while nunca termina y la página se cuelga."
+  - id: q4
+    texto: "Dentro de un bucle, ¿qué hacen break y continue?"
+    opciones:
+      - "break saltea una vuelta; continue corta el bucle"
+      - "break corta el bucle; continue saltea a la siguiente vuelta"
+      - "Ambos cortan el bucle"
+      - "Ambos lo reinician"
+    correcta: 1
+    explicacion: "break corta el bucle por completo; continue saltea el resto de la vuelta actual y pasa a la próxima."

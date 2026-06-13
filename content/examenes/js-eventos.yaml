@@ -1,0 +1,42 @@
+slug: js-eventos
+titulo: Examen del módulo Eventos
+track: javascript
+modulo: eventos
+aprobacion: 70
+preguntas:
+  - id: q1
+    texto: "¿Qué hace boton.addEventListener('click', callback)?"
+    opciones:
+      - "Ejecuta el callback una vez ahora"
+      - "Deja el callback en espera, para ejecutarlo cada vez que se haga clic en el botón"
+      - "Borra el botón"
+      - "Cambia el texto del botón"
+    correcta: 1
+    explicacion: "addEventListener pone al elemento a escuchar el evento; el callback se ejecuta cada vez que ocurre, no en el momento de registrarlo."
+  - id: q2
+    texto: "El callback de un evento, ¿cuándo se ejecuta?"
+    opciones:
+      - "Una sola vez al cargar"
+      - "Cada vez que ocurre el evento"
+      - "Nunca"
+      - "Solo en móviles"
+    correcta: 1
+    explicacion: "Se ejecuta cada vez que el evento sucede (cada clic, cada envío, cada tecla)."
+  - id: q3
+    texto: "¿Para qué sirve evento.preventDefault()?"
+    opciones:
+      - "Para borrar el evento"
+      - "Para cancelar el comportamiento por defecto, como la recarga al enviar un formulario"
+      - "Para crear un evento nuevo"
+      - "Para mostrar un mensaje"
+    correcta: 1
+    explicacion: "preventDefault frena la acción automática del navegador (por ejemplo recargar al hacer submit) para manejarla con JavaScript."
+  - id: q4
+    texto: "¿Qué representa evento.target?"
+    opciones:
+      - "El tipo de evento"
+      - "El elemento que disparó el evento"
+      - "La fecha del evento"
+      - "La página entera"
+    correcta: 1
+    explicacion: "evento.target es el elemento concreto que originó el evento; útil para saber, por ejemplo, en qué ítem de una lista se hizo clic."

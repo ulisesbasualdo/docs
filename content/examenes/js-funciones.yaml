@@ -1,0 +1,42 @@
+slug: js-funciones
+titulo: Examen del módulo Funciones
+track: javascript
+modulo: funciones
+aprobacion: 70
+preguntas:
+  - id: q1
+    texto: "¿Qué hace la instrucción return dentro de una función?"
+    opciones:
+      - "Imprime un valor en la consola"
+      - "Devuelve un valor y termina la ejecución de la función"
+      - "Declara una variable"
+      - "Repite la función"
+    correcta: 1
+    explicacion: "return entrega el valor y corta la función: lo que venga después del return no se ejecuta."
+  - id: q2
+    texto: "¿Cuál es la diferencia entre parámetros y argumentos?"
+    opciones:
+      - "Son lo mismo"
+      - "Los parámetros se nombran al definir la función; los argumentos son los valores que se pasan al llamarla"
+      - "Los argumentos van en la definición"
+      - "Los parámetros solo aceptan números"
+    correcta: 1
+    explicacion: "Parámetros = los casilleros en la definición; argumentos = los valores reales que entran al llamar la función."
+  - id: q3
+    texto: "En una función flecha sin llaves, como (p) => p * 1.21, ¿qué pasa con el retorno?"
+    opciones:
+      - "No devuelve nada"
+      - "El resultado se devuelve automáticamente (retorno implícito)"
+      - "Hay que escribir return igual"
+      - "Da error"
+    correcta: 1
+    explicacion: "Sin llaves, la flecha devuelve la expresión automáticamente. Con llaves, hay que escribir return."
+  - id: q4
+    texto: "¿Qué pasa con una función que se define pero nunca se llama?"
+    opciones:
+      - "Se ejecuta una vez sola"
+      - "No hace nada: definir no es ejecutar"
+      - "Da error"
+      - "Se ejecuta al cargar la página"
+    correcta: 1
+    explicacion: "Definir una función solo la deja lista; recién hace algo cuando la llamás pasándole argumentos."

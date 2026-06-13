@@ -1,0 +1,42 @@
+slug: js-errores
+titulo: Examen del módulo Manejo de errores
+track: javascript
+modulo: errores
+aprobacion: 70
+preguntas:
+  - id: q1
+    texto: "En un try/catch, ¿cuándo se ejecuta el bloque catch?"
+    opciones:
+      - "Siempre"
+      - "Solo si hubo un error dentro del try"
+      - "Solo si el try salió bien"
+      - "Nunca"
+    correcta: 1
+    explicacion: "El catch corre únicamente si algo en el try lanzó un error; si todo salió bien, se saltea."
+  - id: q2
+    texto: "¿Qué contiene error.message?"
+    opciones:
+      - "El código completo"
+      - "Una descripción legible de qué falló"
+      - "La línea del archivo"
+      - "El nombre del usuario"
+    correcta: 1
+    explicacion: "error.message es la descripción del problema, útil para registrarlo o mostrar un aviso claro."
+  - id: q3
+    texto: "En async/await, ¿cómo se atrapan las promesas que fallan?"
+    opciones:
+      - "Con .catch() obligatoriamente"
+      - "Con try/catch alrededor del await"
+      - "No se pueden atrapar"
+      - "Con un if"
+    correcta: 1
+    explicacion: "Con async/await, un try/catch alrededor del await cumple el rol del .catch de las promesas."
+  - id: q4
+    texto: "¿Para qué se usa console.log al depurar?"
+    opciones:
+      - "Para borrar variables"
+      - "Para ver el valor real que tiene una variable en ese punto del código"
+      - "Para acelerar el programa"
+      - "Para enviar datos al servidor"
+    correcta: 1
+    explicacion: "console.log imprime valores en la consola, así dejás de adivinar y ves qué contiene realmente una variable."

@@ -1,0 +1,42 @@
+slug: js-asincronismo
+titulo: Examen del módulo Asincronismo
+track: javascript
+modulo: asincronismo
+aprobacion: 70
+preguntas:
+  - id: q1
+    texto: "¿Qué devuelve fetch('/api/...')?"
+    opciones:
+      - "Los datos directamente"
+      - "Una promesa, que representa un resultado que llegará más adelante"
+      - "Un array"
+      - "true o false"
+    correcta: 1
+    explicacion: "fetch no congela la página esperando: devuelve una promesa, un objeto que representa un resultado futuro."
+  - id: q2
+    texto: "En una cadena de promesas, ¿para qué sirven .then() y .catch()?"
+    opciones:
+      - ".then() para errores y .catch() para el éxito"
+      - ".then() define qué hacer cuando se cumple; .catch() atrapa los errores"
+      - "Son decorativos"
+      - "Ambos ejecutan en paralelo"
+    correcta: 1
+    explicacion: ".then() corre cuando la promesa se resuelve; .catch() captura cualquier error de la cadena. Siempre cerrá con catch."
+  - id: q3
+    texto: "¿Qué hace la palabra await?"
+    opciones:
+      - "Congela toda la página"
+      - "Pausa la función async hasta que la promesa se resuelva, y guarda el resultado"
+      - "Crea una promesa"
+      - "Cancela la operación"
+    correcta: 1
+    explicacion: "await pausa solo esa función hasta resolver la promesa (el resto de la página sigue), y deja el resultado listo para usar."
+  - id: q4
+    texto: "Una función declarada con async, ¿qué devuelve siempre?"
+    opciones:
+      - "Un número"
+      - "Una promesa"
+      - "undefined"
+      - "Un array"
+    correcta: 1
+    explicacion: "Toda función async devuelve una promesa; quien la llame usará await o .then para obtener su valor."

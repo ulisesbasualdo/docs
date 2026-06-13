@@ -1,0 +1,42 @@
+slug: js-codigo-limpio
+titulo: Examen del módulo Código limpio y buenas prácticas
+track: javascript
+modulo: codigo-limpio
+aprobacion: 70
+preguntas:
+  - id: q1
+    texto: "En vez de escribir 0.21 suelto en un cálculo, ¿qué conviene hacer?"
+    opciones:
+      - "Dejarlo así, es más corto"
+      - "Guardarlo en una constante con nombre, como const IVA = 0.21"
+      - "Ponerlo en un comentario"
+      - "Usarlo como string"
+    correcta: 1
+    explicacion: "Un número mágico suelto no se entiende. Guardado en una constante con nombre, el código se explica solo y se cambia en un lugar."
+  - id: q2
+    texto: "Según las buenas prácticas, ¿qué debería hacer una función?"
+    opciones:
+      - "Todo lo posible para ahorrar funciones"
+      - "Una sola cosa, bien definida"
+      - "Siempre devolver un array"
+      - "Tener nombres cortos como fn1"
+    correcta: 1
+    explicacion: "Una función, una responsabilidad. Si calcula, valida y muestra, conviene partirla; es más fácil de entender, probar y reutilizar."
+  - id: q3
+    texto: "¿Qué hace la palabra export en un módulo?"
+    opciones:
+      - "Borra la función"
+      - "Hace pública una función o valor para que otros archivos la importen"
+      - "Ejecuta el archivo"
+      - "Importa de otro archivo"
+    correcta: 1
+    explicacion: "export marca lo que un módulo ofrece al exterior; lo no exportado queda privado de ese archivo."
+  - id: q4
+    texto: "¿Para qué sirve import { algo } from './archivo.js'?"
+    opciones:
+      - "Para traer a este archivo algo que otro exportó"
+      - "Para crear una variable nueva"
+      - "Para borrar un archivo"
+      - "Para iniciar el servidor"
+    correcta: 0
+    explicacion: "import trae a tu archivo una función o valor exportado por otro, así se reutiliza la lógica sin copiarla."

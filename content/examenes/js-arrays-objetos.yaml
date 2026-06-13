@@ -1,0 +1,51 @@
+slug: js-arrays-objetos
+titulo: Examen del módulo Arrays y objetos
+track: javascript
+modulo: arrays-objetos
+aprobacion: 70
+preguntas:
+  - id: q1
+    texto: "Si productos = ['café', 'té', 'mate'], ¿qué devuelve productos[0]?"
+    opciones:
+      - "'té'"
+      - "'café'"
+      - "El array completo"
+      - "undefined"
+    correcta: 1
+    explicacion: "Los arrays empiezan en 0, así que el índice 0 es el primer elemento: 'café'."
+  - id: q2
+    texto: "¿Qué hace el método .push() en un array?"
+    opciones:
+      - "Quita el último elemento"
+      - "Agrega un elemento al final"
+      - "Ordena el array"
+      - "Lo recorre"
+    correcta: 1
+    explicacion: ".push() agrega un elemento al final del array."
+  - id: q3
+    texto: "¿Cómo se accede a la propiedad nombre de un objeto usuario?"
+    opciones:
+      - "usuario->nombre"
+      - "usuario.nombre"
+      - "usuario(nombre)"
+      - "usuario:nombre"
+    correcta: 1
+    explicacion: "Con la notación de punto: usuario.nombre. También existe usuario['nombre'] para claves dinámicas."
+  - id: q4
+    texto: "¿Qué devuelve el método .map() de un array?"
+    opciones:
+      - "El mismo array modificado"
+      - "Un array nuevo con cada elemento transformado por la función"
+      - "Un solo valor"
+      - "true o false"
+    correcta: 1
+    explicacion: ".map() crea un array nuevo aplicando la función a cada elemento; no modifica el original."
+  - id: q5
+    texto: "¿Para qué sirve el método .filter()?"
+    opciones:
+      - "Para transformar cada elemento"
+      - "Para crear un array nuevo solo con los elementos que cumplen una condición"
+      - "Para ordenar"
+      - "Para sumar todo"
+    correcta: 1
+    explicacion: ".filter() conserva solo los elementos cuya función devuelve true; puede devolver menos elementos que el original."

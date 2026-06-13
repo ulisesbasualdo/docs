@@ -1,0 +1,168 @@
+slug: js-final
+titulo: Evaluación final de JavaScript
+track: javascript
+modulo: evaluacion-final
+aprobacion: 70
+preguntas:
+  - id: f1
+    texto: "Básico: ¿cuál es la diferencia entre const y let?"
+    opciones:
+      - "const es para números, let para textos"
+      - "const no permite reasignar el valor; let sí"
+      - "let es más rápido"
+      - "No hay diferencia"
+    correcta: 1
+    explicacion: "const no se puede reasignar; let sí. La práctica recomendada es const por defecto."
+  - id: f2
+    texto: "Básico: ¿qué tipo de dato es 30 (sin comillas)?"
+    opciones:
+      - "string"
+      - "number"
+      - "boolean"
+      - "null"
+    correcta: 1
+    explicacion: "Sin comillas es un number; '30' con comillas sería un string."
+  - id: f3
+    texto: "Funciones: ¿qué hace return?"
+    opciones:
+      - "Imprime en consola"
+      - "Devuelve un valor y termina la función"
+      - "Declara una variable"
+      - "Repite la función"
+    correcta: 1
+    explicacion: "return entrega el valor y corta la ejecución de la función."
+  - id: f4
+    texto: "Funciones: en (p) => p * 1.21, ¿qué pasa con el retorno?"
+    opciones:
+      - "No devuelve nada"
+      - "Devuelve el resultado automáticamente (retorno implícito)"
+      - "Hay que escribir return"
+      - "Da error"
+    correcta: 1
+    explicacion: "Sin llaves, la flecha tiene retorno implícito; con llaves hay que escribir return."
+  - id: f5
+    texto: "Arrays: si productos = ['café', 'té'], ¿qué es productos[0]?"
+    opciones:
+      - "'té'"
+      - "'café'"
+      - "El array entero"
+      - "undefined"
+    correcta: 1
+    explicacion: "Los índices empiezan en 0; el primero es 'café'."
+  - id: f6
+    texto: "Arrays: ¿qué devuelve .map()?"
+    opciones:
+      - "El mismo array modificado"
+      - "Un array nuevo con cada elemento transformado"
+      - "Un solo valor"
+      - "true o false"
+    correcta: 1
+    explicacion: ".map() devuelve un array nuevo aplicando la función a cada elemento, sin tocar el original."
+  - id: f7
+    texto: "Control de flujo: ¿qué recorre for...of?"
+    opciones:
+      - "Las claves de un objeto"
+      - "Los valores de un array, uno por uno"
+      - "Solo números"
+      - "El DOM"
+    correcta: 1
+    explicacion: "for...of recorre los valores de un array o iterable."
+  - id: f8
+    texto: "Control de flujo: dentro de un bucle, ¿qué hace break?"
+    opciones:
+      - "Saltea la vuelta actual"
+      - "Corta el bucle por completo"
+      - "Lo reinicia"
+      - "No hace nada"
+    correcta: 1
+    explicacion: "break corta el bucle; continue saltea solo la vuelta actual."
+  - id: f9
+    texto: "DOM: ¿qué devuelve document.querySelector('.precio')?"
+    opciones:
+      - "Todos los elementos .precio"
+      - "El primer elemento que coincide con el selector"
+      - "El texto"
+      - "Un array"
+    correcta: 1
+    explicacion: "querySelector devuelve el primero que coincide; para todos, querySelectorAll."
+  - id: f10
+    texto: "DOM: ¿qué hace document.createElement('li')?"
+    opciones:
+      - "Lo inserta en la página de inmediato"
+      - "Crea el elemento en memoria, todavía sin insertarlo"
+      - "Busca un li existente"
+      - "Borra una lista"
+    correcta: 1
+    explicacion: "Crea el elemento en memoria; aparece en la página recién al insertarlo (por ejemplo, con append)."
+  - id: f11
+    texto: "Eventos: el callback de addEventListener, ¿cuándo se ejecuta?"
+    opciones:
+      - "Una vez al registrarlo"
+      - "Cada vez que ocurre el evento"
+      - "Nunca"
+      - "Al cerrar la página"
+    correcta: 1
+    explicacion: "Queda en espera y se ejecuta cada vez que sucede el evento."
+  - id: f12
+    texto: "Eventos: ¿para qué sirve evento.preventDefault()?"
+    opciones:
+      - "Para borrar el evento"
+      - "Para cancelar el comportamiento por defecto, como recargar al enviar un formulario"
+      - "Para crear otro evento"
+      - "Para mostrar un mensaje"
+    correcta: 1
+    explicacion: "Frena la acción automática del navegador para manejarla con JavaScript."
+  - id: f13
+    texto: "Asincronismo: ¿qué devuelve fetch?"
+    opciones:
+      - "Los datos directamente"
+      - "Una promesa (un resultado que llegará después)"
+      - "Un array"
+      - "Un booleano"
+    correcta: 1
+    explicacion: "fetch devuelve una promesa; no congela la página esperando los datos."
+  - id: f14
+    texto: "Asincronismo: ¿qué hace await?"
+    opciones:
+      - "Congela toda la página"
+      - "Pausa la función async hasta que la promesa se resuelve y guarda el resultado"
+      - "Crea una promesa"
+      - "Cancela el pedido"
+    correcta: 1
+    explicacion: "await pausa solo esa función hasta resolver la promesa; el resto de la página sigue."
+  - id: f15
+    texto: "Errores: ¿cuándo corre el bloque catch de un try/catch?"
+    opciones:
+      - "Siempre"
+      - "Solo si hubo un error en el try"
+      - "Solo si el try salió bien"
+      - "Nunca"
+    correcta: 1
+    explicacion: "El catch se ejecuta únicamente si algo en el try lanzó un error."
+  - id: f16
+    texto: "Errores: en async/await, ¿cómo se atrapan las promesas que fallan?"
+    opciones:
+      - "Con un if"
+      - "Con try/catch alrededor del await"
+      - "No se pueden atrapar"
+      - "Con console.log"
+    correcta: 1
+    explicacion: "Un try/catch alrededor del await cumple el rol del .catch de las promesas."
+  - id: f17
+    texto: "Código limpio: ¿qué conviene hacer con un número mágico como 0.21?"
+    opciones:
+      - "Dejarlo suelto"
+      - "Guardarlo en una constante con nombre (const IVA = 0.21)"
+      - "Ponerlo en un comentario"
+      - "Convertirlo a texto"
+    correcta: 1
+    explicacion: "Una constante con nombre hace el código autoexplicativo y centraliza el valor en un solo lugar."
+  - id: f18
+    texto: "Código limpio: ¿qué hace export en un módulo?"
+    opciones:
+      - "Importa de otro archivo"
+      - "Hace pública una función o valor para que otros archivos la importen"
+      - "Borra el archivo"
+      - "Ejecuta el módulo"
+    correcta: 1
+    explicacion: "export marca lo que el módulo ofrece al exterior; otros archivos lo traen con import."
