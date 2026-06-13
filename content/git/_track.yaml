@@ -1,0 +1,31 @@
+tecnologia: git
+titulo: Git de cero a experto
+descripcion: >-
+  El control de versiones que usa toda la industria, explicado comando por
+  comando y con las situaciones reales del día a día: guardar, ramificar,
+  fusionar, deshacer errores y colaborar en GitHub.
+modulos:
+  - slug: fundamentos
+    titulo: Fundamentos
+    quiz: git-fundamentos
+  - slug: historia
+    titulo: Historia y cambios
+    quiz: git-historia
+  - slug: ramas
+    titulo: Ramas y fusiones
+    quiz: git-ramas
+  - slug: remotos
+    titulo: Repositorios remotos
+    quiz: git-remotos
+  - slug: deshacer
+    titulo: Deshacer y rescatar
+    quiz: git-deshacer
+  - slug: avanzado
+    titulo: Git avanzado
+    quiz: git-avanzado
+  - slug: github
+    titulo: GitHub y colaboración
+    quiz: git-github
+  - slug: evaluacion-final
+    titulo: Evaluación final
+    quiz: git-final

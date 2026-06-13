@@ -1,0 +1,42 @@
+slug: git-remotos
+titulo: Examen del módulo Repositorios remotos
+track: git
+modulo: remotos
+aprobacion: 70
+preguntas:
+  - id: q1
+    texto: "¿Qué hace git clone?"
+    opciones:
+      - "Crea un repo vacío"
+      - "Descarga una copia completa de un repositorio remoto, con todo el código y la historia"
+      - "Sube tus cambios"
+      - "Borra el remoto"
+    correcta: 1
+    explicacion: "git clone baja todo el proyecto y su historia, y deja el repo conectado al remoto del que clonaste."
+  - id: q2
+    texto: "¿Qué es origin en Git?"
+    opciones:
+      - "El primer commit"
+      - "El nombre estándar del repositorio remoto principal"
+      - "La rama principal"
+      - "Un comando"
+    correcta: 1
+    explicacion: "origin es el alias convencional del remoto principal (en GitHub, GitLab, etc.) con el que sincronizás."
+  - id: q3
+    texto: "¿Qué hace git push?"
+    opciones:
+      - "Baja los cambios del remoto"
+      - "Sube tus commits locales al repositorio remoto"
+      - "Crea una rama"
+      - "Borra commits"
+    correcta: 1
+    explicacion: "push sube tu trabajo al remoto. Hasta que no hacés push, tus commits viven solo en tu máquina."
+  - id: q4
+    texto: "¿Cuál es la diferencia entre git pull y git fetch?"
+    opciones:
+      - "Son iguales"
+      - "pull trae e integra (fetch + merge); fetch solo trae los cambios para que los revises antes"
+      - "fetch sube y pull baja"
+      - "pull es más lento"
+    correcta: 1
+    explicacion: "pull = fetch + merge automático; fetch solo descarga los cambios sin integrarlos, para que decidas vos."

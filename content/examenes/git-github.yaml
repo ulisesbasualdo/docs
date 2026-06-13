@@ -1,0 +1,42 @@
+slug: git-github
+titulo: Examen del módulo GitHub y colaboración
+track: git
+modulo: github
+aprobacion: 70
+preguntas:
+  - id: q1
+    texto: "¿Qué hace el -u en git push -u origin main la primera vez?"
+    opciones:
+      - "Fuerza el push"
+      - "Vincula tu rama local con la remota, para que después alcance con git push o git pull"
+      - "Borra la rama remota"
+      - "Sube solo un archivo"
+    correcta: 1
+    explicacion: "El -u (upstream) deja fija la conexión entre tu rama local y la remota; luego no hace falta repetir origin main."
+  - id: q2
+    texto: "En un flujo de trabajo profesional, ¿cómo se encara un cambio nuevo?"
+    opciones:
+      - "Editando main directamente"
+      - "Creando una rama aparte y dejando main siempre estable"
+      - "Subiendo sin commit"
+      - "Trabajando sin Git"
+    correcta: 1
+    explicacion: "main se mantiene estable; cada cambio madura en su propia rama hasta estar listo para integrarse."
+  - id: q3
+    texto: "¿Qué es un Pull Request (PR)?"
+    opciones:
+      - "Un comando de Git"
+      - "Un pedido, en GitHub, de integrar una rama en otra, que abre un espacio de revisión"
+      - "Una forma de borrar ramas"
+      - "Un tipo de commit"
+    correcta: 1
+    explicacion: "El PR propone integrar una rama (por ejemplo feature/checkout en main), muestra los cambios y habilita la discusión y revisión."
+  - id: q4
+    texto: "¿Cuál es el valor principal de la revisión de código (code review) en un PR?"
+    opciones:
+      - "Hacer el proceso más lento"
+      - "Detectar errores antes de que lleguen a main y compartir conocimiento en el equipo"
+      - "Subir más rápido"
+      - "Evitar usar ramas"
+    correcta: 1
+    explicacion: "La revisión atrapa errores temprano y reparte el conocimiento. El ciclo es: rama, push, PR, review, merge."

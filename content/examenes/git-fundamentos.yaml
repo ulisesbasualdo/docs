@@ -1,0 +1,51 @@
+slug: git-fundamentos
+titulo: Examen del módulo Fundamentos de Git
+track: git
+modulo: fundamentos
+aprobacion: 70
+preguntas:
+  - id: q1
+    texto: "¿Qué hace git init?"
+    opciones:
+      - "Sube el proyecto a internet"
+      - "Convierte la carpeta actual en un repositorio, creando la carpeta oculta .git"
+      - "Crea el primer commit"
+      - "Borra la historia anterior"
+    correcta: 1
+    explicacion: "git init se corre una vez por proyecto y prepara la carpeta .git donde Git guarda la historia. No toca tus archivos."
+  - id: q2
+    texto: "¿Qué hace git status?"
+    opciones:
+      - "Modifica los archivos"
+      - "Muestra el estado actual (qué cambió, qué está preparado); no modifica nada"
+      - "Sube los cambios"
+      - "Crea una rama"
+    correcta: 1
+    explicacion: "git status es pura lectura: te dice qué archivos son nuevos, cuáles cambiaron y cuáles están listos para confirmar."
+  - id: q3
+    texto: "¿Qué hace git add archivo.txt?"
+    opciones:
+      - "Borra el archivo"
+      - "Lo mueve al área de preparación, para incluirlo en el próximo commit"
+      - "Lo sube al remoto"
+      - "Crea el archivo"
+    correcta: 1
+    explicacion: "git add lleva los cambios al área de preparación (staging): vos elegís qué entra en el próximo commit."
+  - id: q4
+    texto: "¿Qué describe un buen mensaje de commit (la parte -m)?"
+    opciones:
+      - "Los nombres de los archivos tocados"
+      - "Qué logra el cambio"
+      - "La fecha y hora"
+      - "El nombre del autor"
+    correcta: 1
+    explicacion: "Archivos, autor y fecha Git ya los registra. El mensaje debe contar QUÉ logra el cambio, lo único que no se deduce del diff."
+  - id: q5
+    texto: "¿Para qué sirve el archivo .gitignore?"
+    opciones:
+      - "Para listar los autores"
+      - "Para indicar qué archivos Git debe ignorar y no versionar (como node_modules)"
+      - "Para configurar el remoto"
+      - "Para guardar contraseñas de forma segura"
+    correcta: 1
+    explicacion: "Todo lo listado en .gitignore queda fuera del control de versiones: dependencias, builds, credenciales. El .gitignore sí se versiona."

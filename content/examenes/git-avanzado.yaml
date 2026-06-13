@@ -1,0 +1,42 @@
+slug: git-avanzado
+titulo: Examen del módulo Git avanzado
+track: git
+modulo: avanzado
+aprobacion: 70
+preguntas:
+  - id: q1
+    texto: "¿Qué logra git rebase main estando en una rama de función?"
+    opciones:
+      - "Borra main"
+      - "Reaplica tus commits sobre la punta actualizada de main, dejando una historia lineal"
+      - "Sube la rama"
+      - "Crea un commit de fusión"
+    correcta: 1
+    explicacion: "rebase levanta tus commits y los vuelve a aplicar sobre el main actualizado: historia lineal, sin commit de fusión."
+  - id: q2
+    texto: "¿Cuál es la regla de oro del rebase?"
+    opciones:
+      - "Rebasear siempre"
+      - "Nunca rebasear commits que ya compartiste (que están en el remoto y otros tienen)"
+      - "Rebasear solo main"
+      - "Rebasear antes de cada commit"
+    correcta: 1
+    explicacion: "El rebase reescribe la historia; hacerlo sobre commits compartidos genera divergencias. Rebase para lo local, merge para lo público."
+  - id: q3
+    texto: "¿Para qué sirve git tag v1.0.0?"
+    opciones:
+      - "Crear una rama"
+      - "Poner una marca permanente a un commit, típicamente una versión publicada"
+      - "Borrar un commit"
+      - "Subir el proyecto"
+    correcta: 1
+    explicacion: "Un tag marca para siempre un punto de la historia, como una versión entregada. No se mueve, a diferencia de una rama."
+  - id: q4
+    texto: "¿Qué hace git cherry-pick <hash>?"
+    opciones:
+      - "Fusiona toda una rama"
+      - "Trae un commit puntual de otra rama a la actual, sin traer el resto"
+      - "Borra un commit"
+      - "Crea un tag"
+    correcta: 1
+    explicacion: "cherry-pick aplica un commit específico (por su hash) en tu rama actual: justo ese cambio, sin fusionar toda la rama."

@@ -1,0 +1,42 @@
+slug: git-historia
+titulo: Examen del módulo Historia y cambios
+track: git
+modulo: historia
+aprobacion: 70
+preguntas:
+  - id: q1
+    texto: "¿Qué muestra git log --oneline?"
+    opciones:
+      - "Solo el último commit"
+      - "El historial resumido, un commit por línea"
+      - "Los archivos ignorados"
+      - "Las ramas remotas"
+    correcta: 1
+    explicacion: "git log --oneline lista cada commit en una línea (hash corto + mensaje), ideal para ver toda la historia de un vistazo."
+  - id: q2
+    texto: "¿A qué se refiere HEAD en Git?"
+    opciones:
+      - "Al primer commit"
+      - "Al commit actual (el último de la rama en la que estás)"
+      - "Al repositorio remoto"
+      - "Al archivo principal"
+    correcta: 1
+    explicacion: "HEAD es un apodo para el commit actual. git show HEAD muestra el detalle de ese commit."
+  - id: q3
+    texto: "¿Qué muestra git diff (sin opciones)?"
+    opciones:
+      - "Los cambios que hiciste pero todavía no preparaste con add"
+      - "El historial de commits"
+      - "Lo que ya está preparado"
+      - "Las ramas"
+    correcta: 0
+    explicacion: "git diff compara tu carpeta de trabajo con la última versión confirmada: muestra lo modificado y aún no preparado."
+  - id: q4
+    texto: "¿Qué muestra git diff --staged?"
+    opciones:
+      - "Nada"
+      - "Lo que está preparado comparado con el último commit (lo que se va a confirmar)"
+      - "El historial completo"
+      - "Los archivos ignorados"
+    correcta: 1
+    explicacion: "git diff --staged muestra exactamente lo que entraría si hacés commit ahora: el área de preparación contra el último commit."

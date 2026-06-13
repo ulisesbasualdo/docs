@@ -1,0 +1,51 @@
+slug: git-deshacer
+titulo: Examen del módulo Deshacer y rescatar
+track: git
+modulo: deshacer
+aprobacion: 70
+preguntas:
+  - id: q1
+    texto: "Tocaste un archivo, quedó mal y querés volver a la última versión confirmada. ¿Qué comando usás?"
+    opciones:
+      - "git restore <archivo>"
+      - "git push"
+      - "git branch"
+      - "git log"
+    correcta: 0
+    explicacion: "git restore <archivo> descarta los cambios sin confirmar y vuelve al último commit. Ojo: esos cambios se pierden."
+  - id: q2
+    texto: "¿Qué hace git reset --hard?"
+    opciones:
+      - "Conserva los cambios en el área de preparación"
+      - "Deshace el commit y borra los cambios de la carpeta de trabajo"
+      - "Solo cambia el mensaje"
+      - "Sube los cambios"
+    correcta: 1
+    explicacion: "--hard deshace el commit y elimina los cambios. Es potente y peligroso; úsalo seguro de lo que hacés."
+  - id: q3
+    texto: "¿Cuál es la forma segura de deshacer un commit que ya compartiste (está en el remoto)?"
+    opciones:
+      - "git reset --hard"
+      - "git commit --amend"
+      - "git revert, que crea un commit inverso sin reescribir la historia"
+      - "Borrar el repositorio"
+    correcta: 2
+    explicacion: "git revert agrega un commit que deshace los cambios, sin reescribir la historia: seguro para commits compartidos."
+  - id: q4
+    texto: "¿Para qué sirve git stash?"
+    opciones:
+      - "Para borrar ramas"
+      - "Para guardar trabajo a medio hacer y limpiar la carpeta, para retomarlo después con git stash pop"
+      - "Para subir al remoto"
+      - "Para crear un tag"
+    correcta: 1
+    explicacion: "git stash guarda los cambios en un cajón aparte (útil para cambiar de rama urgente); git stash pop los vuelve a aplicar."
+  - id: q5
+    texto: "Hiciste un git reset --hard por error y creés que perdiste trabajo. ¿Qué puede ayudarte?"
+    opciones:
+      - "Nada, se perdió para siempre"
+      - "git reflog, que registra dónde estuvo HEAD y suele permitir recuperarlo"
+      - "git status"
+      - "git clone"
+    correcta: 1
+    explicacion: "git reflog lleva un registro de los movimientos de HEAD; muchas veces deja recuperar commits que parecían perdidos."

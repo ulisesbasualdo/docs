@@ -1,0 +1,42 @@
+slug: git-ramas
+titulo: Examen del módulo Ramas y fusiones
+track: git
+modulo: ramas
+aprobacion: 70
+preguntas:
+  - id: q1
+    texto: "¿Qué hace git switch -c feature/login?"
+    opciones:
+      - "Borra la rama login"
+      - "Crea una rama nueva y se cambia a ella en un solo paso"
+      - "Fusiona dos ramas"
+      - "Sube la rama al remoto"
+    correcta: 1
+    explicacion: "switch -c crea la rama y te mueve a ella; el -c es de create. Una rama es una línea de trabajo paralela."
+  - id: q2
+    texto: "Antes de hacer git merge, ¿en qué rama tenés que estar parado?"
+    opciones:
+      - "En la rama de la función"
+      - "En la rama destino, la que va a recibir los cambios"
+      - "En cualquiera"
+      - "En una rama nueva"
+    correcta: 1
+    explicacion: "Te parás en la rama que recibe (por ejemplo main) y hacés git merge <rama-origen>. La pregunta es: ¿a dónde quiero traer el trabajo?"
+  - id: q3
+    texto: "¿Cuándo aparece un conflicto de fusión?"
+    opciones:
+      - "Siempre que hacés merge"
+      - "Cuando dos ramas modificaron la misma línea y Git no sabe cuál elegir"
+      - "Cuando no hay internet"
+      - "Cuando la rama está vacía"
+    correcta: 1
+    explicacion: "Un conflicto surge cuando ambas ramas cambiaron lo mismo; Git frena y te pide que decidas vos. No es un error tuyo."
+  - id: q4
+    texto: "¿Cómo se resuelve un conflicto de fusión?"
+    opciones:
+      - "Borrando el repositorio"
+      - "Editando el archivo para dejar la versión final, luego git add y git commit"
+      - "Con git push --force"
+      - "Esperando a que Git lo resuelva solo"
+    correcta: 1
+    explicacion: "Editás el archivo quitando las marcas <<<<<<< ======= >>>>>>>, hacés git add para marcarlo resuelto y git commit para cerrar."

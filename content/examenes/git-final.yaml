@@ -1,0 +1,132 @@
+slug: git-final
+titulo: Evaluación final de Git
+track: git
+modulo: evaluacion-final
+aprobacion: 70
+preguntas:
+  - id: f1
+    texto: "Fundamentos: ¿qué hace git init?"
+    opciones:
+      - "Sube el proyecto a internet"
+      - "Convierte la carpeta en un repositorio, creando la carpeta .git"
+      - "Crea el primer commit"
+      - "Borra la historia"
+    correcta: 1
+    explicacion: "git init prepara el repositorio local creando la carpeta oculta .git."
+  - id: f2
+    texto: "Fundamentos: ¿qué hace git add?"
+    opciones:
+      - "Borra un archivo"
+      - "Mueve cambios al área de preparación, para el próximo commit"
+      - "Sube al remoto"
+      - "Crea una rama"
+    correcta: 1
+    explicacion: "git add lleva los cambios al staging: elegís qué entra en el próximo commit."
+  - id: f3
+    texto: "Historia: ¿a qué se refiere HEAD?"
+    opciones:
+      - "Al primer commit"
+      - "Al commit actual (el último de tu rama)"
+      - "Al remoto"
+      - "A una rama"
+    correcta: 1
+    explicacion: "HEAD es el apodo del commit actual."
+  - id: f4
+    texto: "Historia: ¿qué muestra git diff --staged?"
+    opciones:
+      - "Nada"
+      - "Lo preparado comparado con el último commit (lo que se va a confirmar)"
+      - "El historial"
+      - "Las ramas"
+    correcta: 1
+    explicacion: "Muestra exactamente lo que entraría si hacés commit ahora."
+  - id: f5
+    texto: "Ramas: ¿qué hace git switch -c feature/x?"
+    opciones:
+      - "Borra la rama"
+      - "Crea una rama nueva y se cambia a ella"
+      - "La fusiona"
+      - "La sube"
+    correcta: 1
+    explicacion: "switch -c crea y cambia a la rama en un paso."
+  - id: f6
+    texto: "Ramas: antes de hacer merge, ¿dónde te parás?"
+    opciones:
+      - "En la rama de la función"
+      - "En la rama destino (la que recibe los cambios)"
+      - "En cualquiera"
+      - "En una rama nueva"
+    correcta: 1
+    explicacion: "Te ubicás en la rama destino y hacés git merge <rama-origen>."
+  - id: f7
+    texto: "Remotos: ¿qué hace git clone?"
+    opciones:
+      - "Crea un repo vacío"
+      - "Descarga una copia completa del repo remoto (código e historia)"
+      - "Sube cambios"
+      - "Borra el remoto"
+    correcta: 1
+    explicacion: "clone baja todo el proyecto y su historia, ya conectado al remoto."
+  - id: f8
+    texto: "Remotos: ¿diferencia entre git pull y git fetch?"
+    opciones:
+      - "Son iguales"
+      - "pull trae e integra (fetch + merge); fetch solo trae para revisar"
+      - "fetch sube, pull baja"
+      - "pull crea ramas"
+    correcta: 1
+    explicacion: "pull = fetch + merge; fetch solo descarga sin integrar."
+  - id: f9
+    texto: "Deshacer: ¿qué hace git reset --hard?"
+    opciones:
+      - "Conserva los cambios preparados"
+      - "Deshace el commit y borra los cambios de la carpeta de trabajo"
+      - "Solo cambia el mensaje"
+      - "Sube al remoto"
+    correcta: 1
+    explicacion: "--hard deshace el commit y elimina los cambios; es el modo peligroso."
+  - id: f10
+    texto: "Deshacer: ¿cuál es la forma segura de revertir un commit ya compartido?"
+    opciones:
+      - "git reset --hard"
+      - "git revert, que crea un commit inverso sin reescribir la historia"
+      - "git commit --amend"
+      - "Borrar el repo"
+    correcta: 1
+    explicacion: "git revert no reescribe la historia: seguro para commits que otros ya tienen."
+  - id: f11
+    texto: "Avanzado: ¿cuál es la regla de oro del rebase?"
+    opciones:
+      - "Rebasear siempre"
+      - "Nunca rebasear commits que ya compartiste"
+      - "Rebasear solo main"
+      - "Rebasear antes de cada commit"
+    correcta: 1
+    explicacion: "El rebase reescribe historia; sobre commits compartidos genera divergencias."
+  - id: f12
+    texto: "Avanzado: ¿qué hace git cherry-pick?"
+    opciones:
+      - "Fusiona toda una rama"
+      - "Trae un commit puntual de otra rama, sin el resto"
+      - "Borra un commit"
+      - "Crea un tag"
+    correcta: 1
+    explicacion: "cherry-pick aplica un commit específico (por su hash) en tu rama actual."
+  - id: f13
+    texto: "GitHub: ¿qué es un Pull Request?"
+    opciones:
+      - "Un comando de Git"
+      - "Un pedido de integrar una rama en otra, con un espacio de revisión"
+      - "Una forma de borrar ramas"
+      - "Un tipo de commit"
+    correcta: 1
+    explicacion: "El PR propone integrar una rama, muestra los cambios y habilita la revisión de código."
+  - id: f14
+    texto: "GitHub: en un flujo profesional, ¿cómo se encara un cambio nuevo?"
+    opciones:
+      - "Editando main directamente"
+      - "Creando una rama aparte y manteniendo main estable"
+      - "Sin hacer commits"
+      - "Sin usar Git"
+    correcta: 1
+    explicacion: "main se mantiene estable; cada cambio madura en su rama y se integra vía Pull Request."
