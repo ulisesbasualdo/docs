@@ -1,0 +1,168 @@
+slug: css-final
+titulo: Evaluación final de CSS
+track: css
+modulo: evaluacion-final
+aprobacion: 70
+preguntas:
+  - id: f1
+    texto: "Básico: en la regla h1 { color: darkblue; }, ¿qué parte es el selector?"
+    opciones:
+      - "color"
+      - "darkblue"
+      - "h1"
+      - "{ }"
+    correcta: 2
+    explicacion: "El selector dice a qué elementos se aplica la regla; aquí, a todos los h1."
+  - id: f2
+    texto: "Básico: ¿qué unidad respeta la configuración de tamaño de letra del usuario?"
+    opciones:
+      - "px"
+      - "rem"
+      - "pt"
+      - "cm"
+    correcta: 1
+    explicacion: "rem es relativa al tamaño raíz; si el usuario agranda la letra del navegador, todo escala con ella."
+  - id: f3
+    texto: "Selectores: ¿qué selecciona .precio?"
+    opciones:
+      - "El id precio"
+      - "Todos los elementos con class=\"precio\""
+      - "La etiqueta <precio>"
+      - "El primer párrafo"
+    correcta: 1
+    explicacion: "El punto apunta a la clase: todos los elementos con class=\"precio\"."
+  - id: f4
+    texto: "Selectores: si dos reglas con distinta especificidad chocan, ¿cuál gana?"
+    opciones:
+      - "La primera del archivo"
+      - "La más específica (id > clase > elemento)"
+      - "La más corta"
+      - "La del elemento"
+    correcta: 1
+    explicacion: "Decide la especificidad; solo si empatan, gana la última escrita."
+  - id: f5
+    texto: "Cajas: ¿qué hace box-sizing: border-box?"
+    opciones:
+      - "Agrega un borde"
+      - "Hace que el width incluya el padding y el borde"
+      - "Quita el margen"
+      - "Centra la caja"
+    correcta: 1
+    explicacion: "Con border-box el width incluye padding y borde, así la caja mide lo que pediste."
+  - id: f6
+    texto: "Cajas: ¿qué hace display: none?"
+    opciones:
+      - "Oculta el elemento dejándole el espacio"
+      - "Saca el elemento: no se ve ni ocupa lugar"
+      - "Lo hace transparente"
+      - "Lo achica a cero pero deja el hueco"
+    correcta: 1
+    explicacion: "display: none lo quita del documento; visibility: hidden sería ocultarlo dejando el espacio."
+  - id: f7
+    texto: "Flexbox: ¿qué lo activa?"
+    opciones:
+      - "float en los hijos"
+      - "display: flex en el contenedor"
+      - "position: flex"
+      - "un atributo flex en el HTML"
+    correcta: 1
+    explicacion: "display: flex en el padre alinea a sus hijos directos."
+  - id: f8
+    texto: "Flexbox: ¿qué define la propiedad gap?"
+    opciones:
+      - "El borde"
+      - "El espacio entre los hijos"
+      - "El color"
+      - "La altura"
+    correcta: 1
+    explicacion: "gap es la separación entre los elementos, definida una vez en el padre."
+  - id: f9
+    texto: "Grid: ¿para qué sirve, a diferencia de Flexbox?"
+    opciones:
+      - "Para una sola dimensión"
+      - "Para dos dimensiones: filas y columnas a la vez"
+      - "Solo para texto"
+      - "Para animar"
+    correcta: 1
+    explicacion: "Flexbox es una dimensión; Grid maneja filas y columnas a la vez."
+  - id: f10
+    texto: "Grid: ¿qué representa la unidad fr?"
+    opciones:
+      - "Píxeles fijos"
+      - "Una fracción del espacio disponible"
+      - "Un porcentaje del texto"
+      - "Frames por segundo"
+    correcta: 1
+    explicacion: "fr reparte el espacio libre del contenedor en fracciones."
+  - id: f11
+    texto: "Responsive: ¿en qué consiste mobile-first?"
+    opciones:
+      - "Diseñar solo para celular"
+      - "Estilos base para lo chico y @media (min-width) para agregar en lo grande"
+      - "Empezar por escritorio y achicar"
+      - "Usar solo px"
+    correcta: 1
+    explicacion: "Base para la pantalla chica, y media queries con min-width para sumar en las grandes."
+  - id: f12
+    texto: "Responsive: ¿qué hace clamp(1.5rem, 5vw, 3rem)?"
+    opciones:
+      - "Fija siempre 5vw"
+      - "Da un valor fluido (ideal 5vw) acotado entre 1.5rem y 3rem"
+      - "Elige el menor"
+      - "Es inválido"
+    correcta: 1
+    explicacion: "clamp escala de forma continua con un piso y un techo."
+  - id: f13
+    texto: "Tipografía: en rgb(0 0 0 / 0.6), ¿qué indica el / 0.6?"
+    opciones:
+      - "El brillo"
+      - "La opacidad (60%)"
+      - "El tamaño"
+      - "El tono"
+    correcta: 1
+    explicacion: "La barra agrega el canal alfa: 0.6 es 60% de opacidad."
+  - id: f14
+    texto: "Tipografía: ¿por qué conviene line-height sin unidad (ej. 1.6)?"
+    opciones:
+      - "Es obligatorio"
+      - "Es un múltiplo del font-size y escala con él"
+      - "Ocupa menos"
+      - "Centra el texto"
+    correcta: 1
+    explicacion: "Sin unidad, es proporcional al tamaño de fuente de cada elemento."
+  - id: f15
+    texto: "Transiciones: ¿dónde conviene declarar transition?"
+    opciones:
+      - "En :hover"
+      - "En el estado normal, para que valga al entrar y al salir"
+      - "En @keyframes"
+      - "En el body únicamente"
+    correcta: 1
+    explicacion: "En el estado normal, así la animación ocurre en ambos sentidos."
+  - id: f16
+    texto: "Animaciones: ¿para qué sirve @keyframes?"
+    opciones:
+      - "Definir una animación de varios pasos, con nombre"
+      - "Crear una variable"
+      - "Importar una fuente"
+      - "Hacer una media query"
+    correcta: 0
+    explicacion: "@keyframes describe la secuencia que luego se aplica con la propiedad animation."
+  - id: f17
+    texto: "Arquitectura: ¿cómo se usa una variable CSS llamada --color?"
+    opciones:
+      - "use(--color)"
+      - "var(--color)"
+      - "$color"
+      - "@color"
+    correcta: 1
+    explicacion: "Se declara con -- y se consume con var(--color)."
+  - id: f18
+    texto: "Arquitectura: en BEM, ¿qué es card--destacada?"
+    opciones:
+      - "Un elemento del bloque"
+      - "Un modificador: una variante del bloque card"
+      - "Dos bloques"
+      - "Un id"
+    correcta: 1
+    explicacion: "El doble guion medio marca un modificador: una variante del bloque (por ejemplo, una tarjeta resaltada)."

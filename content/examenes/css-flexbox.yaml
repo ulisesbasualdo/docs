@@ -1,0 +1,51 @@
+slug: css-flexbox
+titulo: Examen del módulo Layout con Flexbox
+track: css
+modulo: layout-flexbox
+aprobacion: 70
+preguntas:
+  - id: q1
+    texto: "¿Qué activa Flexbox?"
+    opciones:
+      - "float: left en los hijos"
+      - "display: flex en el contenedor padre"
+      - "position: flex"
+      - "un atributo flex en el HTML"
+    correcta: 1
+    explicacion: "display: flex en el padre convierte a sus hijos directos en elementos flexibles que se alinean en una fila."
+  - id: q2
+    texto: "¿Qué controla justify-content en una fila flex?"
+    opciones:
+      - "La alineación vertical"
+      - "La distribución de los hijos a lo largo del eje principal"
+      - "El color de fondo"
+      - "El tamaño de la fuente"
+    correcta: 1
+    explicacion: "justify-content distribuye los hijos en el eje principal (la fila): space-between, center, flex-start, etc."
+  - id: q3
+    texto: "¿Qué controla align-items en una fila flex?"
+    opciones:
+      - "La alineación en el eje transversal (la altura)"
+      - "El ancho de los hijos"
+      - "La cantidad de columnas"
+      - "El orden de los hijos"
+    correcta: 0
+    explicacion: "align-items alinea en el eje transversal; en una fila, eso es la alineación vertical (por ejemplo, center)."
+  - id: q4
+    texto: "¿Para qué sirve la propiedad gap en Flexbox?"
+    opciones:
+      - "Para definir el espacio entre los hijos"
+      - "Para ocultar elementos"
+      - "Para cambiar la fuente"
+      - "Para crear sombras"
+    correcta: 0
+    explicacion: "gap define la separación entre los hijos, una sola vez en el padre, sin necesidad de márgenes individuales."
+  - id: q5
+    texto: "¿Qué hace position: sticky con top: 0?"
+    opciones:
+      - "Fija el elemento siempre a la ventana"
+      - "Lo deja normal hasta que al hacer scroll llega al borde y ahí se pega"
+      - "Lo saca del documento"
+      - "Lo centra en la pantalla"
+    correcta: 1
+    explicacion: "sticky es híbrido: el elemento fluye normal hasta llegar al límite indicado (top: 0) y entonces queda pegado mientras se hace scroll."

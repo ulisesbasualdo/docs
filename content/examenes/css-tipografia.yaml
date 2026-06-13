@@ -1,0 +1,42 @@
+slug: css-tipografia
+titulo: Examen del módulo Tipografía y color
+track: css
+modulo: tipografia-color
+aprobacion: 70
+preguntas:
+  - id: q1
+    texto: "¿Por qué se considera hsl el formato de color más intuitivo?"
+    opciones:
+      - "Porque usa menos caracteres"
+      - "Porque se describe por tono, saturación y luminosidad, como lo pensamos"
+      - "Porque solo permite grises"
+      - "Porque es más rápido"
+    correcta: 1
+    explicacion: "hsl describe el color por tono, saturación y luminosidad; para una variante más oscura solo se baja la luminosidad."
+  - id: q2
+    texto: "En rgb(0 0 0 / 0.6), ¿qué indica el / 0.6?"
+    opciones:
+      - "El brillo"
+      - "La opacidad (canal alfa): 60% opaco"
+      - "El tamaño"
+      - "El tono"
+    correcta: 1
+    explicacion: "La barra agrega el canal alfa: 0.6 es 60% de opacidad, un negro semitransparente."
+  - id: q3
+    texto: "¿Por qué conviene escribir line-height sin unidad (por ejemplo 1.6)?"
+    opciones:
+      - "Porque es obligatorio"
+      - "Porque así es un múltiplo del font-size y escala junto con él"
+      - "Porque ocupa menos"
+      - "Porque centra el texto"
+    correcta: 1
+    explicacion: "Sin unidad, line-height es un múltiplo del tamaño de fuente de cada elemento, así el interlineado escala correctamente."
+  - id: q4
+    texto: "En font-family: system-ui, sans-serif, ¿qué hace la lista separada por comas?"
+    opciones:
+      - "Mezcla las dos fuentes"
+      - "Usa la primera fuente disponible; las siguientes son respaldo"
+      - "Alterna una por párrafo"
+      - "Es un error"
+    correcta: 1
+    explicacion: "Es una lista de respaldo: el navegador usa system-ui y, si no existe, cae a cualquier sans-serif."

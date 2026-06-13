@@ -1,0 +1,42 @@
+slug: css-transiciones
+titulo: Examen del módulo Transiciones y animaciones
+track: css
+modulo: transiciones
+aprobacion: 70
+preguntas:
+  - id: q1
+    texto: "¿En qué estado conviene declarar la propiedad transition?"
+    opciones:
+      - "En el estado :hover"
+      - "En el estado normal, para que la animación valga al entrar y al salir"
+      - "En el body siempre"
+      - "Dentro de @keyframes"
+    correcta: 1
+    explicacion: "Declarar transition en el estado normal hace que el cambio se anime en ambos sentidos (al entrar y al salir del hover)."
+  - id: q2
+    texto: "¿Qué propiedades conviene animar para que sea fluido y no trabe la página?"
+    opciones:
+      - "width y height"
+      - "opacity y transform"
+      - "margin y padding"
+      - "font-family"
+    correcta: 1
+    explicacion: "opacity y transform son baratas para el navegador; animar tamaños o posiciones con margin/width puede trabar la página."
+  - id: q3
+    texto: "¿Para qué sirve @keyframes?"
+    opciones:
+      - "Para definir una animación de varios pasos, con nombre, que luego se aplica"
+      - "Para crear una variable"
+      - "Para importar una fuente"
+      - "Para hacer una media query"
+    correcta: 0
+    explicacion: "@keyframes describe la secuencia (from/to o porcentajes) de una animación con nombre, que después se aplica con la propiedad animation."
+  - id: q4
+    texto: "¿Qué considera @media (prefers-reduced-motion: reduce)?"
+    opciones:
+      - "El ancho de la pantalla"
+      - "A las personas que pidieron menos movimiento, para reducir o apagar animaciones"
+      - "El idioma del usuario"
+      - "La velocidad de internet"
+    correcta: 1
+    explicacion: "Permite respetar a quien configuró 'reducir movimiento' en su sistema, atenuando o quitando animaciones por accesibilidad."

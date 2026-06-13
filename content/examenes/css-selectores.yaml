@@ -1,0 +1,51 @@
+slug: css-selectores
+titulo: Examen del módulo Selectores y cascada
+track: css
+modulo: selectores
+aprobacion: 70
+preguntas:
+  - id: q1
+    texto: "¿Qué selecciona .precio en CSS?"
+    opciones:
+      - "El elemento con id precio"
+      - "Todos los elementos con class=\"precio\""
+      - "La etiqueta <precio>"
+      - "El primer párrafo"
+    correcta: 1
+    explicacion: "El punto apunta a la clase: todos los elementos que tengan class=\"precio\". Es el selector más reutilizable."
+  - id: q2
+    texto: "¿Qué selecciona el combinador > en .card > h2?"
+    opciones:
+      - "Cualquier h2 dentro de .card, a cualquier profundidad"
+      - "Solo los h2 que son hijos directos de .card"
+      - "El h2 anterior a .card"
+      - "Todos los h2 de la página"
+    correcta: 1
+    explicacion: "> es el combinador de hijo directo: solo los h2 inmediatamente dentro de .card, no los nietos."
+  - id: q3
+    texto: "¿Qué es :hover?"
+    opciones:
+      - "Una clase"
+      - "Una pseudo-clase: aplica el estilo cuando el cursor está encima"
+      - "Un id"
+      - "Una propiedad"
+    correcta: 1
+    explicacion: ":hover es una pseudo-clase: apunta a un estado (cursor encima), no a un elemento por su nombre."
+  - id: q4
+    texto: "Si dos reglas con distinta especificidad apuntan al mismo elemento, ¿cuál gana?"
+    opciones:
+      - "La que está primero en el archivo"
+      - "La más específica (id sobre clase, clase sobre elemento)"
+      - "La más corta"
+      - "Siempre la del elemento"
+    correcta: 1
+    explicacion: "Primero decide la especificidad (id > clase > elemento); solo si empatan, gana la última escrita."
+  - id: q5
+    texto: "Para reutilizar un estilo en muchos elementos, ¿qué conviene usar?"
+    opciones:
+      - "Un id distinto en cada uno"
+      - "Una clase compartida"
+      - "El atributo style en cada uno"
+      - "Un selector de elemento"
+    correcta: 1
+    explicacion: "Las clases se reutilizan en muchos elementos; los id son únicos y más rígidos para estilar."

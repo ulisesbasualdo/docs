@@ -1,0 +1,42 @@
+slug: css-responsive
+titulo: Examen del módulo Diseño responsive
+track: css
+modulo: responsive
+aprobacion: 70
+preguntas:
+  - id: q1
+    texto: "¿En qué consiste el enfoque mobile-first?"
+    opciones:
+      - "Diseñar solo para celulares"
+      - "Escribir los estilos base para la pantalla chica y agregar con @media (min-width) en las grandes"
+      - "Empezar por el escritorio y achicar"
+      - "Usar solo píxeles"
+    correcta: 1
+    explicacion: "Mobile-first: estilos base para lo chico y media queries con min-width para sumar en pantallas más grandes. Es más simple y rinde mejor."
+  - id: q2
+    texto: "¿Cuándo se aplica el bloque @media (min-width: 48rem) { ... }?"
+    opciones:
+      - "Siempre"
+      - "Cuando la pantalla mide 48rem de ancho o más"
+      - "Solo en celulares"
+      - "Cuando la pantalla mide menos de 48rem"
+    correcta: 1
+    explicacion: "min-width aplica desde ese ancho hacia arriba. En pantallas más chicas, ese bloque se ignora."
+  - id: q3
+    texto: "¿Qué hace clamp(1.5rem, 5vw, 3rem)?"
+    opciones:
+      - "Fija siempre 5vw"
+      - "Da un valor fluido: idealmente 5vw, pero nunca menos de 1.5rem ni más de 3rem"
+      - "Elige el valor más chico siempre"
+      - "Es un error de sintaxis"
+    correcta: 1
+    explicacion: "clamp(mínimo, ideal, máximo) escala de forma continua con topes: ideal 5vw, acotado entre 1.5rem y 3rem."
+  - id: q4
+    texto: "¿Qué representa la unidad 100vh?"
+    opciones:
+      - "100 píxeles"
+      - "El alto completo de la ventana del navegador"
+      - "El ancho del contenedor"
+      - "El 100% de la fuente"
+    correcta: 1
+    explicacion: "vh es 1% del alto de la ventana; 100vh es el alto completo, útil para secciones a pantalla completa (mejor con min-height)."

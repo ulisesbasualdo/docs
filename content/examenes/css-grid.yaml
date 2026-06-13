@@ -1,0 +1,42 @@
+slug: css-grid
+titulo: Examen del módulo Layout con Grid
+track: css
+modulo: layout-grid
+aprobacion: 70
+preguntas:
+  - id: q1
+    texto: "¿Para qué sirve Grid, a diferencia de Flexbox?"
+    opciones:
+      - "Para una sola dimensión"
+      - "Para layouts en dos dimensiones: filas y columnas a la vez"
+      - "Solo para texto"
+      - "Para animaciones"
+    correcta: 1
+    explicacion: "Flexbox trabaja en una dimensión (fila o columna); Grid en dos a la vez, ideal para galerías y layouts de página."
+  - id: q2
+    texto: "¿Qué crea grid-template-columns: repeat(3, 1fr)?"
+    opciones:
+      - "Tres filas"
+      - "Tres columnas iguales"
+      - "Una columna de 3px"
+      - "Tres imágenes"
+    correcta: 1
+    explicacion: "repeat(3, 1fr) crea tres columnas, cada una de 1 fracción, que se reparten el ancho en partes iguales."
+  - id: q3
+    texto: "¿Qué representa la unidad fr?"
+    opciones:
+      - "Píxeles fijos"
+      - "Una fracción del espacio disponible"
+      - "Un porcentaje del texto"
+      - "Frames por segundo"
+    correcta: 1
+    explicacion: "fr es una fracción del espacio libre del contenedor; permite repartir el ancho sin calcular porcentajes."
+  - id: q4
+    texto: "¿Qué logra repeat(auto-fill, minmax(220px, 1fr))?"
+    opciones:
+      - "Una grilla que agrega o quita columnas sola según el ancho, sin media queries"
+      - "Una sola columna fija"
+      - "Tres filas siempre"
+      - "Ocultar la grilla en el celular"
+    correcta: 0
+    explicacion: "auto-fill mete tantas columnas como entren y minmax fija su ancho mínimo y máximo: una grilla responsiva sin media queries."

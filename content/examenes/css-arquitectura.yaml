@@ -1,0 +1,42 @@
+slug: css-arquitectura
+titulo: Examen del módulo Arquitectura CSS mantenible
+track: css
+modulo: arquitectura
+aprobacion: 70
+preguntas:
+  - id: q1
+    texto: "¿Cómo se declara y se usa una variable CSS?"
+    opciones:
+      - "Se declara con $ y se usa con use()"
+      - "Se declara con -- (por ejemplo --color) y se usa con var(--color)"
+      - "Se declara con @ y se usa con call()"
+      - "No existen las variables en CSS"
+    correcta: 1
+    explicacion: "Las custom properties se declaran con doble guion (--color) y se consumen con var(--color)."
+  - id: q2
+    texto: "¿Por qué se suelen definir las variables en :root?"
+    opciones:
+      - "Porque es obligatorio"
+      - "Porque así quedan globales, disponibles en toda la página"
+      - "Porque solo ahí funcionan los colores"
+      - "Para que sean privadas de un componente"
+    correcta: 1
+    explicacion: ":root apunta al elemento raíz; definir ahí las variables las hace globales para todo el documento."
+  - id: q3
+    texto: "En la convención BEM, ¿qué representa card__titulo?"
+    opciones:
+      - "Un modificador del bloque"
+      - "Un elemento (parte) que vive dentro del bloque card"
+      - "Dos bloques distintos"
+      - "Un id"
+    correcta: 1
+    explicacion: "El doble guion bajo marca un elemento del bloque: card__titulo es 'el título de la tarjeta'."
+  - id: q4
+    texto: "¿Cuál es la principal ventaja de usar variables CSS?"
+    opciones:
+      - "Hacen la página más rápida"
+      - "Permiten cambiar un valor en un solo lugar y que se actualice en todo el sitio"
+      - "Eliminan la necesidad de clases"
+      - "Animan los elementos"
+    correcta: 1
+    explicacion: "Centralizan valores repetidos: cambiás la variable una vez y todo lo que la usa se actualiza. Base de los temas y los sistemas de diseño."

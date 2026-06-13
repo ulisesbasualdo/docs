@@ -10,17 +10,28 @@ modulos:
     quiz: css-basico
   - slug: selectores
     titulo: Selectores y cascada
+    quiz: css-selectores
   - slug: cajas
     titulo: El modelo de caja
+    quiz: css-cajas
   - slug: layout-flexbox
     titulo: Layout con Flexbox
+    quiz: css-flexbox
   - slug: layout-grid
     titulo: Layout con Grid
+    quiz: css-grid
   - slug: responsive
     titulo: Diseño responsive
+    quiz: css-responsive
   - slug: tipografia-color
     titulo: Tipografía y color
+    quiz: css-tipografia
   - slug: transiciones
     titulo: Transiciones y animaciones
+    quiz: css-transiciones
   - slug: arquitectura
     titulo: Arquitectura CSS mantenible
+    quiz: css-arquitectura
+  - slug: evaluacion-final
+    titulo: Evaluación final
+    quiz: css-final

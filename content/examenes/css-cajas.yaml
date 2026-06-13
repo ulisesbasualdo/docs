@@ -1,0 +1,42 @@
+slug: css-cajas
+titulo: Examen del módulo El modelo de caja
+track: css
+modulo: cajas
+aprobacion: 70
+preguntas:
+  - id: q1
+    texto: "¿Qué hace box-sizing: border-box?"
+    opciones:
+      - "Agrega un borde automático"
+      - "Hace que el width incluya el padding y el borde"
+      - "Quita el margen"
+      - "Centra la caja"
+    correcta: 1
+    explicacion: "Con border-box, el width incluye padding y borde, así una caja de 300px mide 300px y no se descuadra."
+  - id: q2
+    texto: "¿Cuál es la diferencia entre padding y margin?"
+    opciones:
+      - "Son lo mismo"
+      - "El padding es el espacio interno (entre contenido y borde); el margin es el externo (entre cajas)"
+      - "El padding va afuera y el margin adentro"
+      - "El margin solo funciona en imágenes"
+    correcta: 1
+    explicacion: "Padding adentro (entre contenido y borde), margin afuera (separa una caja de otras)."
+  - id: q3
+    texto: "¿Qué hace display: none?"
+    opciones:
+      - "Oculta el elemento pero le deja el espacio"
+      - "Saca el elemento: no se ve y no ocupa lugar"
+      - "Lo hace transparente"
+      - "Lo achica a cero pero sigue ocupando lugar"
+    correcta: 1
+    explicacion: "display: none quita el elemento del documento. Para ocultarlo dejando el espacio se usa visibility: hidden."
+  - id: q4
+    texto: "¿Para qué sirve display: inline-block?"
+    opciones:
+      - "Para ocupar siempre todo el ancho"
+      - "Para fluir en línea como el texto, pero aceptando width, height y padding"
+      - "Para ocultar el elemento"
+      - "Para crear una grilla"
+    correcta: 1
+    explicacion: "inline-block combina lo mejor de ambos: convive en la línea como inline, pero acepta tamaño y padding como block."
